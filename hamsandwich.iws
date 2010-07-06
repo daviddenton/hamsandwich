@@ -2,66 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/AdaptingMatcher.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/AdaptingMatcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/FilmCollection.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/ActorMatchers.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core/AdaptingMatcherTest.java" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/package.html" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/package.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/Brand.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/Brand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/PersonTest_v1.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/PersonTest_v1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core/StackInterrogatingNameResolverTest.java" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/IsTrueAdaptingMatcher.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/IsTrueAdaptingMatcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/PersonTest_v4.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/PersonTest_v4.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/package.html" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/package.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/HamSandwichFactory.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/HamSandwichFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core/IsFalseAdaptingMatcherTest.java" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core/IsFalseAdaptingMatcherTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/package.html" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/package.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/Genre.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/Genre.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/hamcrest_to_junit_generics_mismatch/WildcardExtendsT.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/hamcrest_to_junit_generics_mismatch/WildcardExtendsT.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/PersonTest_v3.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/PersonTest_v3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/PersonTest.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/PersonTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/org" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/Actor.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/Actor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/Apple.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/Apple.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/ListUtils.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/ListUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/CountryOfOrigin.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/CountryOfOrigin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/org" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core/BooleanAdaptingMatcherTest.java" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core/BooleanAdaptingMatcherTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/MovieMatchers.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/MovieMatchers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/HamSandwichMatchers.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/HamSandwichMatchers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/BooleanAdaptingMatcher.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/BooleanAdaptingMatcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/Gender.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/Gender.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/PersonTest_v2.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/PersonTest_v2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/hamcrest_to_junit_generics_mismatch/package.html" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/hamcrest_to_junit_generics_mismatch/package.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/Person.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/Person.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/IsFalseAdaptingMatcher.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/IsFalseAdaptingMatcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki/PersonMatchers.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki/PersonMatchers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/FilmCollectionTest.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/OldAppleTest.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/OldAppleTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/NameResolver.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/NameResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/CannotAdaptException.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/CannotAdaptException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/AppleMatchers.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/AppleMatchers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/examples/org" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/MovieBuilder.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/MovieBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core/IsTrueAdaptingMatcherTest.java" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core/IsTrueAdaptingMatcherTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/hamsandwich/core/ListUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/org/hamsandwich/core/ListUtilsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/StackInterrogatingNameResolver.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/Colour.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/Colour.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core/Adapter.java" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core/Adapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/testMatchers/NewAppleTest.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/testMatchers/NewAppleTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/Movie.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/Movie.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/hamcrest_to_junit_generics_mismatch" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/hamcrest_to_junit_generics_mismatch" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/wiki" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/wiki" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters/Origin.java" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/Origin.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/hamsandwich/core" afterPath="$PROJECT_DIR$/src/main/org/hamsandwich/core" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/examples/hamsandwich/example/combinableFilters" afterPath="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="hamsandwich.iws" />
@@ -180,10 +121,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackInterrogatingNameResolverTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StackInterrogatingNameResolverTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.52987015">
+            <state line="21" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hamsandwich.iws" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="10" selection-start="991" selection-end="991" vertical-scroll-proportion="0.46464646">
               <folding />
             </state>
           </provider>
@@ -488,51 +438,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -805,7 +715,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -914,7 +824,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.52987015">
+        <state line="21" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="10" selection-start="991" selection-end="991" vertical-scroll-proportion="0.46464646">
           <folding />
         </state>
       </provider>
