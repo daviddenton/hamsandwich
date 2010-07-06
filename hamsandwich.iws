@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -76,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="20" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
+            <state line="1" column="40" selection-start="85" selection-end="85" vertical-scroll-proportion="0.020373514">
               <folding />
             </state>
           </provider>
@@ -130,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hamsandwich.iws" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hamsandwich.iws" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="10" selection-start="991" selection-end="991" vertical-scroll-proportion="0.46464646">
+            <state line="26" column="10" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,12 +159,13 @@
         <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/OptionLegMatchers.java" />
         <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/StrategyFinder.java" />
         <option value="$PROJECT_DIR$/src/test/hamsandwich/core/AdaptingMatcherTest.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/hamsandwich/core/HamSandwichMatchers.java" />
         <option value="$PROJECT_DIR$/src/main/hamsandwich/core/HamSandwichFactory.java" />
         <option value="$PROJECT_DIR$/src/test/hamsandwich/core/StackInterrogatingNameResolverTest.java" />
         <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java" />
+        <option value="$PROJECT_DIR$/hamsandwich.iws" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -791,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="20" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="173" selection-end="174" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/AdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="43" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
@@ -831,7 +823,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="991" selection-end="991" vertical-scroll-proportion="0.46464646">
+        <state line="26" column="10" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="173" selection-end="174" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="40" selection-start="85" selection-end="85" vertical-scroll-proportion="0.020373514">
           <folding />
         </state>
       </provider>

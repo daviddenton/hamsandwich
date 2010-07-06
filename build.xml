@@ -1,5 +1,5 @@
 <project name="hamsandwich" default="build">
-    <property name="version" value="DEV"/>
+    <property name="version" value="1.0-snapshot"/>
     <property name="artifact" value="${ant.project.name}-${version}"/>
 
     <property name="test.report.dir" location="build/reports/tests"/>
