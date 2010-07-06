@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -79,7 +80,7 @@
       <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="40" selection-start="85" selection-end="85" vertical-scroll-proportion="0.020373514">
+            <state line="1" column="39" selection-start="84" selection-end="84" vertical-scroll-proportion="0.020373514">
               <folding />
             </state>
           </provider>
@@ -133,7 +134,7 @@
       <file leaf-file-name="hamsandwich.iws" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="10" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+            <state line="26" column="10" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -749,7 +750,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="dirty - project rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="dirty - release work" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -767,6 +768,7 @@
     <MESSAGE value="dirty - reaname" />
     <MESSAGE value="dirty - added more detail to complex example" />
     <MESSAGE value="dirty - project rename" />
+    <MESSAGE value="dirty - release work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -822,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+        <state line="26" column="10" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -836,7 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="40" selection-start="85" selection-end="85" vertical-scroll-proportion="0.020373514">
+        <state line="1" column="39" selection-start="84" selection-end="84" vertical-scroll-proportion="0.020373514">
           <folding />
         </state>
       </provider>
