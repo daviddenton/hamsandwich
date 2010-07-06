@@ -1,0 +1,130 @@
+<project name="hamsandwich" default="build">
+    <property name="version" value="DEV"/>
+    <property name="artifact" value="${ant.project.name}-${version}"/>
+
+    <property name="test.report.dir" location="build/reports/tests"/>
+    <property name="test.output.dir" location="build/tests/output"/>
+
+    <path id="classpath.main">
+        <fileset dir="lib"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="classes"/>
+        <delete dir="build"/>
+    </target>
+
+    <target name="build" depends="clean, test, document, package"/>
+
+    <target name="package">
+        <zip destfile="build/${artifact}.zip" update="true">
+            <zipfileset dir="lib" prefix="lib"/>
+            <zipfileset file="build/jars/${artifact}.jar"/>
+            <zipfileset dir="src/main" prefix="main"/>
+            <zipfileset dir="build/doc" prefix="doc"/>
+            <zipfileset dir="src/examples" prefix="examples"/>
+            <zipfileset dir="src/test" prefix="test"/>
+            <zipfileset file="readme.txt"/>
+        </zip>
+    </target>
+
+    <macrodef name="compile-jar">
+        <attribute name="srcdir"/>
+        <attribute name="jarfile"/>
+        <attribute name="classpathref"/>
+        <attribute name="classdir" default="build/classes/@{jarfile}"/>
+
+        <sequential>
+            <mkdir dir="@{classdir}"/>
+            <javac srcdir="@{srcdir}" classpathref="@{classpathref}" destdir="@{classdir}" debug="true" source="1.6"
+                   target="1.6" fork="true"/>
+            <copy todir="@{classdir}">
+                <fileset dir="@{srcdir}" excludes="**/*.java"/>
+            </copy>
+
+            <jar jarfile="build/jars/@{jarfile}" basedir="@{classdir}"/>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compile-module">
+        <attribute name="classpathref"/>
+        <sequential>
+            <path id="test-classpath">
+                <path refid="@{classpathref}"/>
+                <pathelement location="build/jars/${artifact}.jar"/>
+            </path>
+            <compile-jar srcdir="src/main" jarfile="${artifact}.jar" classpathref="@{classpathref}"/>
+            <compile-jar srcdir="src/examples" jarfile="${artifact}.jar" classpathref="@{classpathref}"/>
+            <compile-jar srcdir="src/test" jarfile="${ant.project.name}-test-${version}.jar"
+                         classpathref="test-classpath"/>
+        </sequential>
+    </macrodef>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <mkdir dir="build/jars"/>
+        <compile-module classpathref="classpath.main"/>
+    </target>
+
+    <macrodef name="run-tests">
+        <attribute name="classpathref"/>
+
+        <sequential>
+            <junit fork="true" printsummary="yes" failureproperty="test.failure">
+                <classpath>
+                    <path refid="@{classpathref}"/>
+                    <pathelement location="build/jars/${artifact}.jar"/>
+                    <pathelement location="build/classes"/>
+                    <pathelement location="build/jars/${ant.project.name}-test-${version}.jar"/>
+                </classpath>
+
+                <formatter type="xml"/>
+
+                <batchtest todir="${test.output.dir}">
+                    <fileset dir="src/test">
+                        <include name="**/*Test.java"/>
+                        <exclude name="**/Abstract*Test.java"/>
+                    </fileset>
+                    <fileset dir="src/examples">
+                        <include name="**/*Test.java"/>
+                        <exclude name="**/Abstract*Test.java"/>
+                    </fileset>
+                </batchtest>
+            </junit>
+        </sequential>
+    </macrodef>
+
+    <target name="-test.all" depends="compile">
+        <mkdir dir="${test.output.dir}"/>
+        <run-tests classpathref="classpath.main"/>
+    </target>
+
+    <target name="-test.report">
+        <mkdir dir="${test.report.dir}"/>
+        <junitreport todir="${test.report.dir}">
+            <fileset dir="${test.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${test.report.dir}"/>
+        </junitreport>
+    </target>
+
+    <target name="test" depends="-test.all, -test.report">
+        <fail if="test.failure" message="There were test failures. Look at file://${test.report.dir}/index.html"/>
+    </target>
+
+    <target name="document">
+        <javadoc
+                destdir="build/doc"
+                author="false"
+                version="false"
+                use="true"
+                windowtitle="Ham Sandwich"
+                classpathref="test-classpath">
+            <packageset dir="src/main" defaultexcludes="yes">
+                <include name="**"/>
+            </packageset>
+        </javadoc>
+    </target>
+
+</project>
