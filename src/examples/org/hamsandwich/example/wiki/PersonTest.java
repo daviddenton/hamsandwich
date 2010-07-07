@@ -1,11 +1,11 @@
-package org.hamsandwich.example.combinableFilters.wiki;
+package org.hamsandwich.example.wiki;
 
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.hamsandwich.example.combinableFilters.wiki.PersonMatchers.age;
-import static org.hamsandwich.example.combinableFilters.wiki.PersonMatchers.name;
+import static org.hamsandwich.example.wiki.PersonMatchers.age;
+import static org.hamsandwich.example.wiki.PersonMatchers.name;
 
 public class PersonTest {
 

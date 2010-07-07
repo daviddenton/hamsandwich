@@ -1,10 +1,10 @@
-package org.hamsandwich.example.combinableFilters.testMatchers;
+package org.hamsandwich.example.testMatchers;
 
 import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.*;
-import static org.hamsandwich.example.combinableFilters.testMatchers.AppleMatchers.*;
+import static org.hamsandwich.example.testMatchers.AppleMatchers.*;
 import static org.hamsandwich.hamcrest_to_junit_generics_mismatch.WildcardExtendsT.assertThat;
 
 /**

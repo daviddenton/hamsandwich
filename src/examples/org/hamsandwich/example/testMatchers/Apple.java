@@ -1,4 +1,4 @@
-package org.hamsandwich.example.combinableFilters.testMatchers;
+package org.hamsandwich.example.testMatchers;
 
 public class Apple {
 

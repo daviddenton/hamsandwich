@@ -1,4 +1,4 @@
-package org.hamsandwich.example.combinableFilters.testMatchers;
+package org.hamsandwich.example.testMatchers;
 
 import org.hamcrest.Matchers;
 import org.junit.Ignore;

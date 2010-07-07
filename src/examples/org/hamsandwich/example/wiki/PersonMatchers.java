@@ -1,4 +1,4 @@
-package org.hamsandwich.example.combinableFilters.wiki;
+package org.hamsandwich.example.wiki;
 
 import org.hamcrest.Matcher;
 import org.hamsandwich.core.AdaptingMatcher;

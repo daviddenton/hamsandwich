@@ -1,7 +1,7 @@
-package org.hamsandwich.example.combinableFilters.testMatchers;
+package org.hamsandwich.example.testMatchers;
 
-import static org.hamsandwich.example.combinableFilters.testMatchers.Colour.*;
-import static org.hamsandwich.example.combinableFilters.testMatchers.CountryOfOrigin.*;
+import static org.hamsandwich.example.testMatchers.Colour.*;
+import static org.hamsandwich.example.testMatchers.CountryOfOrigin.*;
 
 public enum Brand {
     Coxes(Red, England), GoldenDelicious(Yellow, US), GrannySmith(Green, Australia);

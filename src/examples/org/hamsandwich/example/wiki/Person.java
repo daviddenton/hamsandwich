@@ -1,4 +1,4 @@
-package org.hamsandwich.example.combinableFilters.wiki;
+package org.hamsandwich.example.wiki;
 
 public class Person {
 
