@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="" />
+    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - introducing non-type-safe adapting matcher as an alternative to the standard one. for people scared of generics" />
+    <list id="b96a4580-7372-4e66-9531-c03330c5cab7" name="PROJ" comment="PROJ" />
     <ignored path="hamsandwich.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,6 +25,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/NewAppleTest.java" line="34" class="org.hamsandwich.example.testMatchers.NewAppleTest" package="org.hamsandwich.example.testMatchers">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -65,83 +81,89 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdaptingMatcherTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
+      <file leaf-file-name="StackInterrogatingNameResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="4" column="6" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
+      <file leaf-file-name="AppleMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="24" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/package.html">
+      <file leaf-file-name="MovieMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/MovieMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="7" selection-start="21" selection-end="21" vertical-scroll-proportion="0.04008016">
+            <state line="23" column="48" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
+      <file leaf-file-name="FilmCollectionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="173" selection-end="174" vertical-scroll-proportion="0.0">
+            <state line="32" column="10" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdaptingMatcher.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PersonMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="26" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="58" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest_v3.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonTest_v3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="58" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdaptingMatcher.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/AdaptingMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="43" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HamSandwichMatchers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HamSandwichFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/HamSandwichFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackInterrogatingNameResolverTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hamsandwich.iws" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="10" selection-start="4260" selection-end="4260" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="17" column="2" selection-start="595" selection-end="595" vertical-scroll-proportion="0.26785713">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,22 +178,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/OptionStyle.java" />
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/ExerciseType.java" />
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/VanillaOption.java" />
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/VanillaOptionMatchers.java" />
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/OptionLeg.java" />
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/OptionLegMatchers.java" />
-        <option value="$PROJECT_DIR$/src/examples/hamsandwich/example/complex/StrategyFinder.java" />
-        <option value="$PROJECT_DIR$/src/test/hamsandwich/core/AdaptingMatcherTest.java" />
-        <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/src/main/hamsandwich/core/HamSandwichMatchers.java" />
-        <option value="$PROJECT_DIR$/src/main/hamsandwich/core/HamSandwichFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/hamsandwich/core/StackInterrogatingNameResolverTest.java" />
-        <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java" />
-        <option value="$PROJECT_DIR$/hamsandwich.iws" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/package.html" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/StaticNameResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/GenerifiedClassEntityNameResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/AdaptingMatcherImpl.java" />
+        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java" />
+        <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" />
+        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/NewAppleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/TypeSafeAdaptingMatcherTest.java" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/ReflectionUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/TypeSafeAdaptingMatcher.java" />
+        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java" />
+        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/MovieMatchers.java" />
+        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java" />
+        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/NonTypeSafeAdaptingMatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/org/hamsandwich/core/AdaptingMatcher.java" />
       </list>
     </option>
   </component>
@@ -363,13 +385,12 @@
       <showLibraryContents />
       <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -399,6 +420,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,39 +593,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propSubversion" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hamsandwich.core" />
       <recent name="hamsandwich.example.animals" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki" />
     </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="org.hamsandwich.core.TypeSafeAdaptingMatcher" />
+      <recent name="org.hamsandwich.core.AdaptingMatcher.ReflectionUtils" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.hamsandwich.core" />
       <recent name="hamsandwich.example.animals" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hamsandwich.example" />
       <recent name="hamsandwich" />
       <recent name="hamsandwich.core" />
       <recent name="hamsandwich.example.animals" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in hamsandwich">
@@ -583,6 +702,72 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NewAppleTest.ripensCorrectly_willFail" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="hamsandwich" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.hamsandwich.example.testMatchers" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.example.testMatchers.NewAppleTest" />
+      <option name="METHOD_NAME" value="ripensCorrectly_willFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AdaptingMatcherTest.failsWhenNonMatchingTypeIsPassed" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="hamsandwich" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.AdaptingMatcherTest" />
+      <option name="METHOD_NAME" value="failsWhenNonMatchingTypeIsPassed" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TypeSafeAdaptingMatcherTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="hamsandwich" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.TypeSafeAdaptingMatcherTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -661,9 +846,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.AdaptingMatcherTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in hamsandwich" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.NewAppleTest.ripensCorrectly_willFail" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AdaptingMatcherTest.failsWhenNonMatchingTypeIsPassed" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TypeSafeAdaptingMatcherTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -734,26 +922,26 @@
     <frame x="-4" y="-4" width="1928" height="1178" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953465" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.65957445" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16284037" sideWeight="0.65957445" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18099307" sideWeight="0.66381764" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -772,7 +960,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="dirty - release work" />
+    <option name="LAST_COMMIT_MESSAGE" value="dirty - introducing non-type-safe adapting matcher as an alternative to the standard one. for people scared of generics" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -791,6 +979,8 @@
     <MESSAGE value="dirty - added more detail to complex example" />
     <MESSAGE value="dirty - project rename" />
     <MESSAGE value="dirty - release work" />
+    <MESSAGE value="dirty - slight refactor ahead of introducing non-type-safe adapting matcher" />
+    <MESSAGE value="dirty - introducing non-type-safe adapting matcher as an alternative to the standard one. for people scared of generics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -812,64 +1002,139 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/hamcrest-library-1.2.jar!/org/hamcrest/Matchers.class">
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/package.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="46" selection-start="3772" selection-end="3772" vertical-scroll-proportion="-4.7916665" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="24" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.0">
+        <state line="2" column="7" selection-start="21" selection-end="21" vertical-scroll-proportion="-1.4285715">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="jar://$PROJECT_DIR$/lib/hamcrest-core-1.2.jar!/org/hamcrest/TypeSafeDiagnosingMatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="173" selection-end="174" vertical-scroll-proportion="0.0">
+        <state line="5" column="29" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.3333333">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonTest_v1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="10" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/NewAppleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="11" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/MovieMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="48" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="10" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonTest_v3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/AdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="43" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/org/hamsandwich/core/HamSandwichFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hamsandwich.iws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="10" selection-start="4260" selection-end="4260" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="17" column="2" selection-start="595" selection-end="595" vertical-scroll-proportion="0.26785713">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/package.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="21" selection-end="21" vertical-scroll-proportion="0.04008016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+          <settings />
+        </UIState>
+      </state>
+      <state key="Copyright.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+        </UIState>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+          <settings />
+        </UIState>
+      </state>
+    </states>
   </component>
 </project>
 
