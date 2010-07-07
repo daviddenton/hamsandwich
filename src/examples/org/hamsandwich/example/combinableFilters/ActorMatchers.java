@@ -1,9 +1,9 @@
 package org.hamsandwich.example.combinableFilters;
 
 import org.hamcrest.Matcher;
-import org.hamsandwich.core.AdaptingMatcher;
 import org.hamsandwich.core.CannotAdaptException;
 import org.hamsandwich.core.HamSandwichFactory;
+import org.hamsandwich.core.TypeSafeAdaptingMatcher;
 
 import static org.hamcrest.Matchers.*;
 import static org.hamsandwich.core.ListUtils.join;
@@ -26,7 +26,7 @@ public class ActorMatchers {
 
     @HamSandwichFactory
     private static Matcher<Actor> gender(Gender gender) {
-        return new AdaptingMatcher<Actor, Gender>(is(equalTo(gender))) {
+        return new TypeSafeAdaptingMatcher<Actor, Gender>(is(equalTo(gender))) {
             @Override
             public Gender get(Actor in) throws CannotAdaptException {
                 return in.gender;
@@ -36,7 +36,7 @@ public class ActorMatchers {
 
     @HamSandwichFactory
     public static Matcher<Actor> originatingFrom(Origin origin) {
-        return new AdaptingMatcher<Actor, Origin>(is(equalTo(origin))) {
+        return new TypeSafeAdaptingMatcher<Actor, Origin>(is(equalTo(origin))) {
             @Override
             public Origin get(Actor in) throws CannotAdaptException {
                 return in.origin;

@@ -10,11 +10,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-public class AdaptingMatcherTest {
+public class TypeSafeAdaptingMatcherTest {
 
     @HamSandwichFactory
-    private static Matcher<Boolean> condition(Matcher<Boolean> valueMatcher) {
-        return new AdaptingMatcher<Boolean, Boolean>(valueMatcher) {
+    private static Matcher<Boolean> condition(Matcher valueMatcher) {
+        return new TypeSafeAdaptingMatcher<Boolean, Boolean>(valueMatcher) {
             @Override
             public Boolean get(Boolean in) throws CannotAdaptException {
                 return in;
@@ -24,33 +24,50 @@ public class AdaptingMatcherTest {
 
     @Test
     public void succeedsWhenNestedMatcherSucceeds() {
-        assertTrue(condition((Matcher<Boolean>) is(true)).matches(true));
+        assertTrue(condition(is(true)).matches(true));
+    }
+
+    @Test
+    public void failsWhenNullIsPassed() {
+        assertFalse(condition(is(true)).matches(null));
     }
 
     @Test
     public void failsToMatchWhenNestedMatcherFails() {
-        assertFalse(condition((Matcher<Boolean>) is(true)).matches(false));
+        assertFalse(condition(is(true)).matches(false));
+    }
+
+    @Test
+    public void failsWhenNonMatchingTypeIsPassed() {
+        assertFalse(condition(is(true)).matches("NOT A BOOLEAN"));
     }
 
     @Test
     public void describesExpectedCondition() {
         StringDescription description = new StringDescription();
-        condition((Matcher<Boolean>) is(true)).describeTo(description);
+        condition(is(true)).describeTo(description);
         assertThat(description.toString(), is(equalTo("[a Boolean where condition (is <true>)]")));
     }
 
     @Test
     public void describesMismatchOfValidClass() {
         StringDescription description = new StringDescription();
-        condition((Matcher<Boolean>) is(true)).describeMismatch(false, description);
+        condition(is(true)).describeMismatch(false, description);
         assertThat(description.toString(), is(equalTo("is <true> was <false>")));
     }
 
     @Test
     public void describesMismatchOfMismatchedClass() {
         StringDescription description = new StringDescription();
-        condition((Matcher<Boolean>) is(true)).describeMismatch("this is not a boolean", description);
+        condition(is(true)).describeMismatch("this is not a boolean", description);
         assertThat(description.toString(), is(equalTo("was \"this is not a boolean\"")));
+    }
+
+    @Test
+    public void describesMismatchOfNullPassedObject() {
+        StringDescription description = new StringDescription();
+        condition(is(true)).describeMismatch(null, description);
+        assertThat(description.toString(), is(equalTo("was null")));
     }
 
     @Test
@@ -62,7 +79,7 @@ public class AdaptingMatcherTest {
 
     @HamSandwichFactory
     private boolean matchTheLengthOfThisString(String testString, int checkedLength) {
-        Matcher<String> theLengthOfTheString = new AdaptingMatcher<String, Integer>(is(equalTo(checkedLength))) {
+        Matcher<String> theLengthOfTheString = new TypeSafeAdaptingMatcher<String, Integer>(is(equalTo(checkedLength))) {
             @Override
             public Integer get(String in) throws CannotAdaptException {
                 return in.length();
