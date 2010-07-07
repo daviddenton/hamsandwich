@@ -1,7 +1,6 @@
 package org.hamsandwich.example.wiki;
 
 import org.hamcrest.Matcher;
-import org.hamsandwich.core.AdaptingMatcher;
 import org.hamsandwich.core.CannotAdaptException;
 import org.hamsandwich.core.HamSandwichFactory;
 import org.hamsandwich.core.TypeSafeAdaptingMatcher;
@@ -10,9 +9,9 @@ public class PersonMatchers {
 
     @HamSandwichFactory
     public static Matcher<Person> name(Matcher<? super String>... nameMatchers) {
-        return new AdaptingMatcher<Person>(nameMatchers) {
+        return new TypeSafeAdaptingMatcher<Person, String>(nameMatchers) {
             @Override
-            public Object get(Person in) throws CannotAdaptException {
+            public String get(Person in) throws CannotAdaptException {
                 return in.name;
             }
         };
