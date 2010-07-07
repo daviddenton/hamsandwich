@@ -24,7 +24,7 @@ public class HamSandwichMatchers {
      * @return the matcher
      */
     public static <I, O> Matcher<I> adaptingMatcher(final Adapter<I, O> adapter, Matcher<O>... valueMatchers) {
-        return new TypeSafeAdaptingMatcher<I, O>(allOf(valueMatchers)) {
+        return new AdaptingMatcher<I, O>(allOf(valueMatchers)) {
             @Override
             public O get(I in) throws CannotAdaptException {
                 return adapter.get(in);
@@ -43,7 +43,7 @@ public class HamSandwichMatchers {
      * @return the matcher
      */
     public static <I, O> Matcher<I> adaptingMatcher(String entityName, final Adapter<I, O> adapter, Matcher<O>... valueMatchers) {
-        return new TypeSafeAdaptingMatcher<I, O>(entityName, allOf(valueMatchers)) {
+        return new AdaptingMatcher<I, O>(entityName, allOf(valueMatchers)) {
             @Override
             public O get(I in) throws CannotAdaptException {
                 return adapter.get(in);

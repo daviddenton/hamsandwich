@@ -20,7 +20,7 @@ public class AppleMatchers {
 
     @HamSandwichFactory
     public static Matcher<Apple> brand(Matcher<? super Brand>... valueMatcher) {
-        return new AdaptingMatcher<Apple>(valueMatcher) {
+        return new AdaptingMatcher<Apple, Brand>(valueMatcher) {
             @Override
             public Brand get(Apple in) {
                 return in.brand();

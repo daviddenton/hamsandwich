@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.is;
  *
  * @param <I> The input type.
  */
-public abstract class BooleanAdaptingMatcher<I> extends TypeSafeAdaptingMatcher<I, Boolean> {
+public abstract class BooleanAdaptingMatcher<I> extends AdaptingMatcher<I, Boolean> {
 
     /**
      * Constructor. Uses the simple class name of the input type.
