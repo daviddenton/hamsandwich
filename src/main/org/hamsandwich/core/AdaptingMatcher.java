@@ -5,11 +5,6 @@ import org.hamcrest.Matcher;
 import org.hamcrest.StringDescription;
 import org.junit.internal.matchers.TypeSafeMatcher;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.hamcrest.Matchers.allOf;
 
 /**
@@ -71,7 +66,7 @@ public abstract class AdaptingMatcher<I, O> extends TypeSafeMatcher<I> implement
 
     @Override
     public void describeMismatch(Object o, Description description) {
-        if (getGenerifiedClassesOf(this).get(0) == o.getClass()) {
+        if (ReflectionUtils.getGenerifiedClassesOf(this).get(0) == o.getClass()) {
             try {
                 valueMatcher.describeMismatch(get((I) o), description);
                 return;
@@ -80,37 +75,6 @@ public abstract class AdaptingMatcher<I, O> extends TypeSafeMatcher<I> implement
             }
         }
         super.describeMismatch(o, description);
-    }
-
-    private static List<Class> getGenerifiedClassesOf(Object o) {
-        ParameterizedType genericSuperclass = (ParameterizedType) o.getClass().getGenericSuperclass();
-        List<Class> classes = new ArrayList<Class>();
-        for (Type type : genericSuperclass.getActualTypeArguments()) {
-            Class targetClass = type instanceof ParameterizedType ? (Class) ((ParameterizedType) type).getRawType() : (Class) type;
-            classes.add(targetClass);
-        }
-        return classes;
-    }
-
-    private static class StaticNameResolver implements NameResolver {
-        private final String name;
-
-        public StaticNameResolver(String name) {
-            if (name == null) throw new IllegalArgumentException("Can't have a null name for a matcher");
-            this.name = name;
-        }
-
-        @Override
-        public String resolveFor(Object o) {
-            return name;
-        }
-    }
-
-    private static class GenerifiedClassEntityNameResolver implements NameResolver {
-        @Override
-        public String resolveFor(Object object) {
-            return "a " + getGenerifiedClassesOf(object).get(0).getSimpleName();
-        }
     }
 
     @Override
