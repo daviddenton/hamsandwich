@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - upgraded to V1.3RC1 of Hamcrest, to keep maximum compatability with JUnit 4.8.X. Will release again when Hamcrest goes gold.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="hamsandwich.iws" />
@@ -141,7 +141,7 @@
       <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="496" selection-end="496" vertical-scroll-proportion="0.5113636">
+            <state line="10" column="4" selection-start="278" selection-end="278" vertical-scroll-proportion="0.3409091">
               <folding />
             </state>
           </provider>
@@ -693,7 +693,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="dirty - upgraded to V1.3RC1 of Hamcrest, to keep maximum compatability with JUnit 4.8.X. Will release again when Hamcrest goes gold." />
+    <option name="LAST_COMMIT_MESSAGE" value="dirty - project" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -713,6 +713,7 @@
     <MESSAGE value="dirty - project rename" />
     <MESSAGE value="dirty - release work" />
     <MESSAGE value="dirty - upgraded to V1.3RC1 of Hamcrest, to keep maximum compatability with JUnit 4.8.X. Will release again when Hamcrest goes gold." />
+    <MESSAGE value="dirty - project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -849,7 +850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="496" selection-end="496" vertical-scroll-proportion="0.5113636">
+        <state line="10" column="4" selection-start="278" selection-end="278" vertical-scroll-proportion="0.3409091">
           <folding />
         </state>
       </provider>

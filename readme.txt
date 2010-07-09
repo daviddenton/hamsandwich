@@ -8,7 +8,7 @@ v1.1
 v1.0
 	- Main release with AdaptingMatcher and associated convienience builder methods.
 	
-- Included examples:
+    - Included examples:
     
 		- Test Matchers: (Fruit) Use of simple adapter matchers assertions in tests.
     
