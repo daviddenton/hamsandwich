@@ -8,7 +8,7 @@ import org.hamsandwich.core.HamSandwichFactory;
 public class PersonMatchers {
 
     @HamSandwichFactory
-    public static Matcher<Person> name(Matcher<? super String>... nameMatchers) {
+    public static Matcher<Person> name(Matcher<String>... nameMatchers) {
         return new AdaptingMatcher<Person, String>(nameMatchers) {
             @Override
             public String get(Person in) throws CannotAdaptException {

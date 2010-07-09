@@ -11,7 +11,7 @@ import java.util.Set;
 public class MovieMatchers {
 
     @HamSandwichFactory
-    public static Matcher<Movie> movieName(Matcher<? super String>... valueMatchers) {
+    public static Matcher<Movie> movieName(Matcher<String>... valueMatchers) {
         return new AdaptingMatcher<Movie, String>(valueMatchers) {
             @Override
             public String get(Movie in) throws CannotAdaptException {
@@ -31,7 +31,7 @@ public class MovieMatchers {
     }
 
     @HamSandwichFactory
-    public static Matcher<Movie> genre(Matcher<? super Genre>... valueMatchers) {
+    public static Matcher<Movie> genre(Matcher<Genre>... valueMatchers) {
         return new AdaptingMatcher<Movie, Genre>(valueMatchers) {
             @Override
             public Genre get(Movie in) throws CannotAdaptException {
@@ -61,7 +61,7 @@ public class MovieMatchers {
     }
 
     @HamSandwichFactory
-    public static Matcher<Movie> leadingActor(Matcher<? super Actor>... valueMatchers) {
+    public static Matcher<Movie> leadingActor(Matcher<Actor>... valueMatchers) {
         return new AdaptingMatcher<Movie, Actor>(valueMatchers) {
             @Override
             public Actor get(Movie in) throws CannotAdaptException {
@@ -71,7 +71,7 @@ public class MovieMatchers {
     }
 
     @HamSandwichFactory
-    public static Matcher<Movie> supportingActor(Matcher<? super Actor> valueMatchers) {
+    public static Matcher<Movie> supportingActor(Matcher<Actor> valueMatchers) {
         return new AdaptingMatcher<Movie, Actor>(valueMatchers) {
             @Override
             public Actor get(Movie in) throws CannotAdaptException {

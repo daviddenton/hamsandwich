@@ -24,32 +24,32 @@ public class AdaptingMatcherTest {
 
     @Test
     public void succeedsWhenNestedMatcherSucceeds() {
-        assertTrue(condition((Matcher<Boolean>) is(true)).matches(true));
+        assertTrue(condition(is(true)).matches(true));
     }
 
     @Test
     public void failsToMatchWhenNestedMatcherFails() {
-        assertFalse(condition((Matcher<Boolean>) is(true)).matches(false));
+        assertFalse(condition(is(true)).matches(false));
     }
 
     @Test
     public void describesExpectedCondition() {
         StringDescription description = new StringDescription();
-        condition((Matcher<Boolean>) is(true)).describeTo(description);
+        condition(is(true)).describeTo(description);
         assertThat(description.toString(), is(equalTo("[a Boolean where condition (is <true>)]")));
     }
 
     @Test
     public void describesMismatchOfValidClass() {
         StringDescription description = new StringDescription();
-        condition((Matcher<Boolean>) is(true)).describeMismatch(false, description);
+        condition(is(true)).describeMismatch(false, description);
         assertThat(description.toString(), is(equalTo("is <true> was <false>")));
     }
 
     @Test
     public void describesMismatchOfMismatchedClass() {
         StringDescription description = new StringDescription();
-        condition((Matcher<Boolean>) is(true)).describeMismatch("this is not a boolean", description);
+        condition(is(true)).describeMismatch("this is not a boolean", description);
         assertThat(description.toString(), is(equalTo("was \"this is not a boolean\"")));
     }
 

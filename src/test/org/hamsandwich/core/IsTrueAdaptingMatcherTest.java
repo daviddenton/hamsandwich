@@ -1,6 +1,5 @@
 package org.hamsandwich.core;
 
-import org.hamcrest.Matcher;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
@@ -10,7 +9,7 @@ public class IsTrueAdaptingMatcherTest {
 
     @Test
     public void matchesTrueCorrectly() throws Exception {
-        assertThat(matcher().matchesSafely(true), (Matcher<Object>) is(true));
+        assertThat(matcher().matchesSafely(true), is(true));
     }
 
     @HamSandwichFactory
