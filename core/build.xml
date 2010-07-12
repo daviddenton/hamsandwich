@@ -25,6 +25,7 @@
             <zipfileset dir="src/examples" prefix="examples"/>
             <zipfileset dir="src/test" prefix="test"/>
             <zipfileset file="readme.txt"/>
+            <zipfileset file="license.txt"/>
         </zip>
     </target>
 

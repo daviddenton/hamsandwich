@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
+    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - moved all to core module directory">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.ipr" afterPath="$PROJECT_DIR$/hamsandwich.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build.xml" afterPath="$PROJECT_DIR$/core/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/readme.txt" afterPath="$PROJECT_DIR$/core/readme.txt" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path=".idea/workspace.xml" />
@@ -123,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="278" selection-end="278" vertical-scroll-proportion="0.30674848">
+            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,16 +137,25 @@
       <file leaf-file-name="license.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/license.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="7" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
+            <state line="26" column="7" selection-start="0" selection-end="1492" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="license.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/idea-plugin/license.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="35" selection-start="1158" selection-end="1158" vertical-scroll-proportion="-2.142857">
+            <state line="27" column="44" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.86538464">
               <folding />
             </state>
           </provider>
@@ -160,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/StackInterrogatingNameResolverTest.java" />
         <option value="$PROJECT_DIR$/hamsandwich.iws" />
         <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/package.html" />
         <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/combinableFilters/MovieMatchers.java" />
@@ -175,6 +185,7 @@
         <option value="$PROJECT_DIR$/license.txt" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/IsEqualAdaptingMatcherTest.java" />
+        <option value="$PROJECT_DIR$/core/readme.txt" />
         <option value="$PROJECT_DIR$/core/build.xml" />
       </list>
     </option>
@@ -382,6 +393,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -406,20 +437,21 @@
       <recent name="hamsandwich.example.animals" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\hamsandwich\trunk\idea-plugin" />
       <recent name="$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hamsandwich.example.animals" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\hamsandwich\trunk\core" />
-      <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hamsandwich.example" />
       <recent name="hamsandwich" />
       <recent name="hamsandwich.core" />
       <recent name="hamsandwich.example.animals" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\hamsandwich\trunk\core" />
+      <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.IsEqualAdaptingMatcherTest">
@@ -646,7 +678,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1178" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -658,7 +690,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23064603" sideWeight="0.66191834" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23064603" sideWeight="0.66191834" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -806,21 +838,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/license.txt">
+    <entry file="file://$PROJECT_DIR$/core/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="7" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="1158" selection-end="1158" vertical-scroll-proportion="-2.142857">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/readme.txt">
+    <entry file="file://$PROJECT_DIR$/core/license.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="278" selection-end="278" vertical-scroll-proportion="0.30674848">
+        <state line="26" column="7" selection-start="0" selection-end="1492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/license.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="44" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.86538464">
           <folding />
         </state>
       </provider>

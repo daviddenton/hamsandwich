@@ -1,5 +1,4 @@
 HAMSANDWICH RELEASE NOTES
-
 ==========================
 
 v1.1
