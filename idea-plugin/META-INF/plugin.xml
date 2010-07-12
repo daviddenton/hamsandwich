@@ -1,19 +1,16 @@
 <idea-plugin version="2">
   <name>Ham Sandwich Filling Plug-in for Idea</name>
-  <description>Adds automated code completion and code generation features relevant to the Ham Sandwich micro-library</description>
+  <description>Provides automated code completion/generation features relevant to the Ham Sandwich micro-library</description>
   <version>1.0</version>
-  <vendor>hamsandwich.org</vendor>
+  <vendor url="http://hamsandwich.googlecode.com">Ham Sandwich</vendor>
   <idea-version since-build="8000"/>
 
-  <application-components>
-  </application-components>
-
-  <project-components>
-  </project-components>
-
   <actions>
+      <group id="HamSandwichFilling.group" text="HamSandwich" description="Ham-Sandwich generators" popup="true">
+          <add-to-group group-id="GenerateGroup" relative-to-action="GenerateEquals" anchor="after"/>
+          <action id="GenerateMatchersFromClassAction" class="org.hamsandwich.filling.GenerateMatchersFromClassAction"
+                  text="with methods" description="Generates matchers">
+          </action>
+        </group>
   </actions>
-
-  <extensions defaultExtensionNs="com.intellij">
-  </extensions>
 </idea-plugin>
