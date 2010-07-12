@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - moved all to core module directory">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/idea-plugin.iml" afterPath="$PROJECT_DIR$/idea-plugin/idea-plugin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.ipr" afterPath="$PROJECT_DIR$/hamsandwich.ipr" />
+    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
@@ -137,7 +134,7 @@
       <file leaf-file-name="AdaptingMatcher.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="46" selection-start="3487" selection-end="3487" vertical-scroll-proportion="0.51742625">
+            <state line="96" column="0" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.7747989">
               <folding />
             </state>
           </provider>
@@ -625,8 +622,9 @@
     </configuration>
     <configuration default="false" name="Ham Sandwich Filling" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="idea-plugin" />
-      <option name="VM_PARAMETERS" value="" />
+      <option name="VM_PARAMETERS" value="-XX:MaxPermSize=128m" />
       <option name="PROGRAM_PARAMETERS" value="" />
+      <log_file path="$PROJECT_DIR$/../../Library/Caches/IntelliJIdea90CE/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -750,7 +748,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="dirty - moved all to core module directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="dirty - added launch project for idea plugin" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -773,6 +771,7 @@
     <MESSAGE value="dirty - project" />
     <MESSAGE value="dirty - added isEqualAdaptingMatcher" />
     <MESSAGE value="dirty - moved all to core module directory" />
+    <MESSAGE value="dirty - added launch project for idea plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -881,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="46" selection-start="3487" selection-end="3487" vertical-scroll-proportion="0.51742625">
+        <state line="96" column="0" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.7747989">
           <folding />
         </state>
       </provider>
