@@ -1,0 +1,19 @@
+<idea-plugin version="2">
+  <name>Ham Sandwich Filling Plug-in for Idea</name>
+  <description>Adds automated code completion and code generation features relevant to the Ham Sandwich micro-library</description>
+  <version>1.0</version>
+  <vendor>hamsandwich.org</vendor>
+  <idea-version since-build="8000"/>
+
+  <application-components>
+  </application-components>
+
+  <project-components>
+  </project-components>
+
+  <actions>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+</idea-plugin>

@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - moved all to core module directory">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/META-INF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/idea-plugin.iml" afterPath="$PROJECT_DIR$/idea-plugin/idea-plugin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin" afterPath="$PROJECT_DIR$/idea-plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/test" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib/hamcrest-all-1.3.0RC1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib/junit-dep-4.8.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/APlaceholder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.ipr" afterPath="$PROJECT_DIR$/hamsandwich.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/META-INF/plugin.xml" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path=".idea/workspace.xml" />
@@ -80,15 +72,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IsEqualAdaptingMatcher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/IsEqualAdaptingMatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IsTrueAdaptingMatcherTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/IsTrueAdaptingMatcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,10 +144,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APlaceholder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="APlaceholder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/APlaceholder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.05970149">
+            <state line="4" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/idea-plugin/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.5074627">
               <folding />
             </state>
           </provider>
@@ -177,10 +169,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="GIT_EXECUTABLE" value="git.exe" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java" />
         <option value="$PROJECT_DIR$/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" />
         <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" />
         <option value="$PROJECT_DIR$/src/test/org/hamsandwich/core/BooleanAdaptingMatcherTest.java" />
@@ -196,6 +190,7 @@
         <option value="$PROJECT_DIR$/core/build.xml" />
         <option value="$PROJECT_DIR$/idea-plugin/src/test/TestTest.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/APlaceholder.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -422,47 +417,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idea-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idea-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,16 +495,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
@@ -884,11 +843,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="54" selection-start="635" selection-end="643" vertical-scroll-proportion="0.0" />
@@ -987,7 +941,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/APlaceholder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.05970149">
+        <state line="4" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.5074627">
           <folding />
         </state>
       </provider>
