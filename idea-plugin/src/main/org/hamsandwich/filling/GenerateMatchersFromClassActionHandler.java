@@ -17,8 +17,7 @@ public class GenerateMatchersFromClassActionHandler extends EditorActionHandler 
         GenerateMatchersClassComputable generateMatchersClassComputable = new GenerateMatchersClassComputable(superEditor, classToBuildFrom);
         if (generateMatchersClassComputable.canGenerateMatcherFor(classToBuildFrom)) {
             try {
-                PsiClass builderClass = getApplication().runWriteAction(generateMatchersClassComputable);
-                superEditor.jumpToClass(builderClass);
+                superEditor.jumpToClass(getApplication().runWriteAction(generateMatchersClassComputable));
             } catch (SuperEditor.CannotPerformAction cannotPerformAction) {
                 superEditor.showWarning("Warning", "No class generated");
             }

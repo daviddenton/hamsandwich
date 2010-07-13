@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/idea-plugin.iml" afterPath="$PROJECT_DIR$/idea-plugin/idea-plugin.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
+    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - added launch project for idea plugin">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="MOVED" beforePath="C:\dev\hamsandwich\trunk\idea-plugin\src\main\org\hamsandwich\filling\Blah.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMethodBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib/commons-lang-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib/daisy-chain-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib/google-collect-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuperEditor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/lib/xom-1.2.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiImportListBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/extlib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path=".idea/workspace.xml" />
@@ -81,48 +73,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GenerateMatchersFromClassActionHandler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.82822084">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GenerateMatchersClassComputable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="40" selection-start="532" selection-end="553" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Messages.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/Messages.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="23" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditorActionHandler.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/editor/actionSystem/EditorActionHandler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuperEditor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuperEditor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
+            <state line="34" column="12" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,48 +84,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditSourceUtil.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/ide/util/EditSourceUtil.class">
+      <file leaf-file-name="PsiMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+            <state line="26" column="66" selection-start="979" selection-end="990" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PsiClassBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassBuilder.java">
+      <file leaf-file-name="PsiType.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiType.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="38" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PsiMethodBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMethodBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="58" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+            <state line="14" column="52" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PsiImportListBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiImportListBuilder.java">
+      <file leaf-file-name="AdaptingMatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="43" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+            <state line="21" column="85" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PsiHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiHelper.java">
+      <file leaf-file-name="Adapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/Adapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="52" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HamSandwichMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="8" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PsiMethod.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="38" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HierarchicalMethodSignature.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/HierarchicalMethodSignature.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="56" selection-start="170" selection-end="197" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionMatchers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="21" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionMatchersTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.33742332">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,13 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SomeAction.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/META-INF/plugin.xml" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassAction.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassForm.form" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/Blah.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassHelper.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/BasePsiClassBuilder.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMethodBuilder.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiImportListBuilder.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassBuilder.java" />
@@ -206,8 +187,15 @@
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/EditorActions.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuoerEditor.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuperEditor.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/CollectionMatchers.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/Adapter.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassMatchers.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
+        <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
       </list>
     </option>
   </component>
@@ -487,11 +475,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="idea-plugin" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,6 +558,7 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="SDKs" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -513,6 +568,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -520,6 +576,9 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.hamsandwich.core" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.hamsandwich.core" />
       <recent name="hamsandwich.example.animals" />
@@ -542,6 +601,7 @@
       <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.hamsandwich.core" />
       <recent name="hamsandwich.example" />
       <recent name="hamsandwich" />
       <recent name="hamsandwich.core" />
@@ -831,99 +891,39 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/idea-plugin/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/actionSystem/ActionGroup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/actionSystem/DefaultActionGroup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="101" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/application/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiElementFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMethodBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiImportListBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="38" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/editor/actionSystem/EditorActionHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="52" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/Messages.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="23" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/ide/util/EditSourceUtil.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="47" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/idea-plugin/lib/daisy-chain-1.1.jar!/org/daisychain/source/DaisyChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.3333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/idea-plugin/lib/daisy-chain-1.1.jar!/org/daisychain/source/Annotation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.3333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="93" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/BooleanAdaptingMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="117" selection-end="365" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -937,16 +937,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/HierarchicalMethodSignature.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="532" selection-end="553" vertical-scroll-proportion="0.0">
+        <state line="5" column="56" selection-start="170" selection-end="197" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.82822084">
+        <state line="65" column="38" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="85" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="8" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="52" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="66" selection-start="979" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="12" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.33742332">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

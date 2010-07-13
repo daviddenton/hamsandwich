@@ -2,7 +2,13 @@ package org.hamsandwich.filling;
 
 import com.intellij.openapi.util.Computable;
 import com.intellij.psi.PsiClass;
+import com.intellij.psi.PsiMethod;
 import com.intellij.psi.PsiModifier;
+import org.hamsandwich.core.CollectionMatchers;
+
+import static org.hamsandwich.filling.PsiMatchers.noParameters;
+import static org.hamsandwich.filling.PsiMatchers.returnsVoid;
+import static org.hamsandwich.filling.PsiMatchers.signature;
 
 public class GenerateMatchersClassComputable implements Computable<PsiClass> {
     private final SuperEditor superEditor;
@@ -18,9 +24,18 @@ public class GenerateMatchersClassComputable implements Computable<PsiClass> {
     }
 
     public PsiClass compute() {
-        return superEditor.newClassBuilder()
+        PsiClassBuilder baseBuilder = superEditor.newClassBuilder()
                 .withDirectory(classToBuildFrom.getContainingFile().getContainingDirectory())
-                .withName(classToBuildFrom.getName()+"Matcher")
-                .build();
+                .withName(classToBuildFrom.getName() + "Matcher");
+
+        PsiMethod[] methods = classToBuildFrom.getMethods();
+
+        Iterable<PsiMethod> iterable = CollectionMatchers.filter(methods, signature(noParameters(), returnsVoid()));
+        for (PsiMethod psiMethod : iterable) {
+            
+//            baseBuilder.withMethod(new PsiMethodBuilder().build());
+        }
+        return baseBuilder.build();
     }
+
 }
