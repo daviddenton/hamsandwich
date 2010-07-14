@@ -5,16 +5,14 @@ import org.hamsandwich.core.AdaptingMatcher;
 import org.hamsandwich.core.CannotAdaptException;
 import org.hamsandwich.core.HamSandwichFactory;
 
+import static org.hamsandwich.core.ReplayMatcher.on;
+import static org.hamsandwich.core.ReplayMatcher.replayMatcher;
+
 public class PersonMatchers {
 
     @HamSandwichFactory
     public static Matcher<Person> name(Matcher<String>... nameMatchers) {
-        return new AdaptingMatcher<Person, String>(nameMatchers) {
-            @Override
-            public String get(Person in) throws CannotAdaptException {
-                return in.name;
-            }
-        };
+        return replayMatcher(on(Person.class).getName(), nameMatchers);
     }
 
     @HamSandwichFactory

@@ -12,7 +12,7 @@ public class PersonTest_v1 {
         Person dave = new Person("Dave", 33);
         Person alan = new Person("Alan", 65);
 
-        assertThat(dave.name, is(equalTo("Dave")));
+        assertThat(dave.getName(), is(equalTo("Dave")));
         assertThat(dave.age, is(equalTo(33)));
         assertThat(dave.age, is(lessThan(alan.age)));
     }

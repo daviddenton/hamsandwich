@@ -1,12 +1,16 @@
 package org.hamsandwich.example.testMatchers;
 
 import org.hamcrest.Matcher;
-import org.hamsandwich.core.AdaptingMatcher;
-import org.hamsandwich.core.CannotAdaptException;
-import org.hamsandwich.core.HamSandwichFactory;
-import org.hamsandwich.core.IsTrueAdaptingMatcher;
+import org.hamsandwich.core.*;
+
+import static org.hamsandwich.core.ReplayMatcher.on;
 
 public class AppleMatchers {
+
+    @HamSandwichFactory
+    public static Matcher<Apple> colour(Matcher<Colour>... valueMatchers) {
+        return ReplayMatcher.replayMatcher(on(Apple.class).colour(), valueMatchers);
+    }
 
     @HamSandwichFactory
     public static Matcher<Apple> perfectlyRipe() {

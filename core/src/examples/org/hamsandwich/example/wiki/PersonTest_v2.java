@@ -16,7 +16,7 @@ public class PersonTest_v2 {
     }
 
     private void assertThePersonDetailsAgainst(Person actual, Person elderPerson, String expectedName, int expectedAge) {
-        assertThat(actual.name, is(equalTo(expectedName)));
+        assertThat(actual.getName(), is(equalTo(expectedName)));
         assertThat(actual.age, is(equalTo(expectedAge)));
         assertThat(actual.age, is(lessThan(elderPerson.age)));
     }
