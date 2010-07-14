@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -109,13 +114,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyingMatcher.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ProxyingMatcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.37931034">
+            <state line="8" column="20" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProxyingMatcherTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="35" selection-start="429" selection-end="429" vertical-scroll-proportion="0.33152175">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocationReplayer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,35 +163,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="5" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilmCollectionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="51" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionFilterTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionFilterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -180,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassMatchers.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java" />
@@ -195,7 +188,10 @@
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/ProxyingMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CannotAdaptException.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyMatcherBuilder.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
       </list>
     </option>
   </component>
@@ -671,7 +667,7 @@
       <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in core">
+  <component name="RunManager" selected="JUnit.ProxyingMatcherTest">
     <configuration default="false" name="All in core" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="core" />
@@ -701,6 +697,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
       <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.CollectionFilterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ProxyingMatcherTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="idea-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.ProxyingMatcherTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -844,10 +862,11 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in core" />
       <item index="1" class="java.lang.String" itemvalue="Plugin.Ham Sandwich Filling" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionMatchersTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ProxyingMatcherTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1013,23 +1032,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="52" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="38" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/HierarchicalMethodSignature.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="56" selection-start="170" selection-end="197" vertical-scroll-proportion="0.0" />
@@ -1106,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CannotAdaptException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
@@ -1120,9 +1115,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.37931034">
+        <state line="8" column="20" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="429" selection-end="429" vertical-scroll-proportion="0.33152175">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

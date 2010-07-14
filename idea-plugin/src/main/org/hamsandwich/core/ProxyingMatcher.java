@@ -7,48 +7,33 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class ProxyingMatcher<I, O> extends AdaptingMatcher<I, O> {
-    private final O proxy;
 
-//    @HamSandwichFactory
-//    public static Matcher<String> something(Matcher<Integer>... matchers) {
-//        return new ProxyingMatcher<String, Integer>(on(String.class).length(), matchers);
-//    }
-
-    public <I> ProxyingMatcher(O proxy, Matcher<? super O>... valueMatchers) {
-        super(valueMatchers);
-        this.proxy = proxy;
+    public static <I, O> Matcher<I> proxy(O notUsed, Matcher<O>... valueMatchers) {
+        return new ProxyingMatcher<I, O>(valueMatchers);
     }
 
-    // new ProxyMatcher(on(Blah.class).getValue(), valueMatchers)
+    private ProxyingMatcher(Matcher<? super O>... valueMatchers) {
+        super(valueMatchers);
+    }
+
+    public static <T> T on(Class<T> clazz) {
+        return ConcreteClassProxyFactory.INSTANCE.proxyFor(new InvocationHandler() {
+            @Override
+            public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
+                new ThreadLocal<InvocationReplayer>().set(new InvocationReplayer(method, objects));
+                return null;
+            }
+        }, clazz);
+    }
+
     @Override
     public O get(I in) throws CannotAdaptException {
-        RecordingInvocationHandler handler = new RecordingInvocationHandler(); // not this one
         try {
-            return (O) handler.replay(in);
+            return (O) new ThreadLocal<InvocationReplayer>().get().replay(in);
         } catch (IllegalAccessException e) {
             throw new CannotAdaptException(e.getMessage());
         } catch (InvocationTargetException e) {
             throw new CannotAdaptException(e.getMessage());
-        }
-    }
-
-    public static <T> T on(Class<T> clazz) {
-        return ConcreteClassProxyFactory.INSTANCE.proxyFor(new RecordingInvocationHandler(), clazz);
-    }
-
-    private static class RecordingInvocationHandler<T, O> implements InvocationHandler {
-        private Method method;
-        private Object[] objects;
-
-        @Override
-        public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
-            this.method = method;
-            this.objects = objects;
-            return null;
-        }
-
-        public O replay(T in) throws InvocationTargetException, IllegalAccessException {
-            return (O) method.invoke(in, objects);
         }
     }
 }
