@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v2.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/Person.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v1.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/readme.txt" afterPath="$PROJECT_DIR$/core/readme.txt" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -73,17 +69,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ActorMatchers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="21" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1279150049000" expanded="false" signature="59:431" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AppleMatchers.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,10 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="package.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/package.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="-4.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="75" selection-start="184" selection-end="184" vertical-scroll-proportion="0.16085792">
               <folding />
             </state>
           </provider>
@@ -180,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcher.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
@@ -196,6 +189,7 @@
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/Person.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" />
+        <option value="$PROJECT_DIR$/core/readme.txt" />
       </list>
     </option>
   </component>
@@ -684,6 +678,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
@@ -1053,13 +1048,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="115" column="5" selection-start="4481" selection-end="4481" vertical-scroll-proportion="0.0">
@@ -1168,7 +1156,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/package.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="-4.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="75" selection-start="184" selection-end="184" vertical-scroll-proportion="0.16085792">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,10 @@
 HAMSANDWICH RELEASE NOTES
 ==========================
 
+v1.2
+    - Added ReplayMatcher and associated helpers.
+    - First stab at Idea plug-in to generate Matcher factory method classes
+
 v1.1
     - Upgraded to Hamcrest-1.3RC1 to maintain maximum compatability with JUnit-4.8.x. Gold release of Hamcrest coming soon.
 
