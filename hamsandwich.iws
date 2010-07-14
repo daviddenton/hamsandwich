@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -111,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdaptingMatcherTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdaptingMatcherTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="94" selection-start="1906" selection-end="1906" vertical-scroll-proportion="0.46195653">
+            <state line="34" column="9" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackInterrogatingNameResolver.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StackInterrogatingNameResolver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
+            <state line="23" column="124" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.62606233">
               <folding />
             </state>
           </provider>
@@ -182,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ConcreteClassProxyFactoryTest.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/RecordingAdaptingMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteCallingAdaptingMatcher.java" />
@@ -198,6 +196,7 @@
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java" />
       </list>
     </option>
   </component>
@@ -1181,13 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="0" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
@@ -1197,7 +1189,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="94" selection-start="1906" selection-end="1906" vertical-scroll-proportion="0.46195653">
+        <state line="34" column="9" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="124" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.62606233">
           <folding />
         </state>
       </provider>

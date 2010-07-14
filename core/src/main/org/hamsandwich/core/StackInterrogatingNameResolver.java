@@ -21,7 +21,7 @@ class StackInterrogatingNameResolver implements NameResolver {
                     throw new RuntimeException("For some reason I couldn't find an existing class", e1);
                 }
             }
-            throw new RuntimeException("No name found");
+            throw new RuntimeException("No name found. Did you annotate the factory method with the @HamSandwichAnnotation ?");
         }
     }
 
