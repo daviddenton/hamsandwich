@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/FunctionMatcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -93,7 +94,18 @@
       <file leaf-file-name="ConcreteClassProxyFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="43" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-4.8846154">
+            <state line="32" column="0" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-4.1538463">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateMatchersFromClassAction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="8" selection-start="536" selection-end="536" vertical-scroll-proportion="0.45652175">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,16 +116,25 @@
       <file leaf-file-name="AdaptingMatcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1427" selection-end="1610" vertical-scroll-proportion="0.0">
+            <state line="42" column="11" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunctionMatcher.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java">
+      <file leaf-file-name="StackInterrogatingNameResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="21" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.7053824">
+            <state line="23" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FunctionMatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/FunctionMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="47" selection-start="3019" selection-end="3019" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,9 +143,9 @@
         </entry>
       </file>
       <file leaf-file-name="FunctionMatcherTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java">
+        <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/FunctionMatcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="917" selection-end="924" vertical-scroll-proportion="0.0">
+            <state line="30" column="30" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,7 +189,6 @@
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ConcreteClassProxyFactoryTest.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/RecordingAdaptingMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteCallingAdaptingMatcher.java" />
-        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/ProxyingMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CannotAdaptException.java" />
@@ -179,6 +199,7 @@
         <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcher.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java" />
       </list>
     </option>
   </component>
@@ -408,6 +429,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -462,10 +495,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hamsandwich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,8 +670,8 @@
       <recent name="hamsandwich.example.animals" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.hamsandwich.filling" />
       <recent name="org.hamsandwich.core" />
+      <recent name="org.hamsandwich.filling" />
       <recent name="hamsandwich.example" />
       <recent name="hamsandwich" />
       <recent name="hamsandwich.core" />
@@ -654,7 +683,7 @@
       <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionMatcherTest">
+  <component name="RunManager" selected="JUnit.All in core">
     <configuration default="false" name="All in core" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="core" />
@@ -719,6 +748,32 @@
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FunctionMatcherTest.proxyingMethodThatReturnsABoolean" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="idea-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.FunctionMatcherTest" />
+      <option name="METHOD_NAME" value="proxyingMethodThatReturnsABoolean" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57265" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -849,11 +904,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in core" />
       <item index="1" class="java.lang.String" itemvalue="Plugin.Ham Sandwich Filling" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionMatchersTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.ProxyingMatcherTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionMatcherTest.proxyingMethodThatReturnsABoolean" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -936,7 +992,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.66698563" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919094" sideWeight="0.66109425" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1086,15 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="43" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-4.8846154">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CannotAdaptException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
@@ -1102,25 +1149,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1427" selection-end="1610" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="917" selection-end="924" vertical-scroll-proportion="0.0">
+        <state line="42" column="11" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/FunctionMatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="30" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/FunctionMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="21" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.7053824">
+        <state line="67" column="47" selection-start="3019" selection-end="3019" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-4.1538463">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="536" selection-end="536" vertical-scroll-proportion="0.45652175">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

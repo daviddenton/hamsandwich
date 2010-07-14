@@ -57,6 +57,8 @@ public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
             @Override
             public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
                 INVOCATION_REPLAYER.set(new InvocationReplayer(method, objects));
+                if (method.getReturnType().getName().equals("boolean")) return false;
+                if (method.getReturnType().isPrimitive()) return 0;
                 return null;
             }
         }, clazz);

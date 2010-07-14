@@ -30,7 +30,6 @@ class ConcreteClassProxyFactory {
             setConstructorsAccessible(concreteClass, true);
             Class<T> proxyClass = createProxyClass((Class) concreteClass, interfaces);
             Object o = createProxy(proxyClass, invocationHandler);
-            System.out.println(o.getClass());
             return (T) ((Class) concreteClass).cast(o);
         } finally {
             setConstructorsAccessible(concreteClass, false);
