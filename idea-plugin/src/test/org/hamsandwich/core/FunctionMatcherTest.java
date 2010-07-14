@@ -5,11 +5,11 @@ import org.junit.Test;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
-import static org.hamsandwich.core.ProxyingMatcher.on;
-import static org.hamsandwich.core.ProxyingMatcher.proxyMatcher;
+import static org.hamsandwich.core.FunctionMatcher.functionMatcher;
+import static org.hamsandwich.core.FunctionMatcher.on;
 import static org.junit.Assert.assertThat;
 
-public class ProxyingMatcherTest {
+public class FunctionMatcherTest {
 
     @Test
     public void proxyingStuff() throws Exception {
@@ -21,7 +21,7 @@ public class ProxyingMatcherTest {
 
     @HamSandwichFactory
     private static Matcher<ABean> aMatcher(Matcher<Integer>... matchers) {
-        return proxyMatcher(on(ABean.class).getAnInt(), matchers);
+        return functionMatcher(on(ABean.class).getAnInt(), matchers);
     }
 
     private class ABean {
