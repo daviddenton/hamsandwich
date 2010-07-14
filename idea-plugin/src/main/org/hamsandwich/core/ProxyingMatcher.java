@@ -9,7 +9,12 @@ import java.lang.reflect.Method;
 public class ProxyingMatcher<I, O> extends AdaptingMatcher<I, O> {
     private final O proxy;
 
-    public ProxyingMatcher(O proxy, Matcher<? super O>... valueMatchers) {
+//    @HamSandwichFactory
+//    public static Matcher<String> something(Matcher<Integer>... matchers) {
+//        return new ProxyingMatcher<String, Integer>(on(String.class).length(), matchers);
+//    }
+
+    public <I> ProxyingMatcher(O proxy, Matcher<? super O>... valueMatchers) {
         super(valueMatchers);
         this.proxy = proxy;
     }
