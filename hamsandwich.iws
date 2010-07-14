@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - added launch project for idea plugin">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path=".idea/workspace.xml" />
@@ -143,19 +143,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionMatchers.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CollectionMatchers.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="61" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="42" column="24" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.72392637">
+              <folding>
+                <marker date="1279096455982" expanded="true" signature="38:193" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionMatchersTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CollectionMatchersTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.398773">
+            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,8 +192,8 @@
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
-        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
       </list>
     </option>
   </component>
@@ -1014,18 +1016,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
+    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="61" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.398773">
+        <state line="42" column="24" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.72392637">
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1279096455982" expanded="true" signature="38:193" placeholder="..." />
           </folding>
         </state>
       </provider>

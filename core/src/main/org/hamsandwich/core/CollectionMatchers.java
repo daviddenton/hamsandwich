@@ -1,11 +1,12 @@
 package org.hamsandwich.core;
 
 import org.hamcrest.Matcher;
-import org.hamcrest.core.AllOf;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import static java.util.Arrays.asList;
+import static org.hamcrest.core.AllOf.allOf;
 
 /**
  * Convienience methods for common collection matching functions.
@@ -23,7 +24,7 @@ public class CollectionMatchers {
      * @return an iterable of matching subjects from the input collection
      */
     public static <T> Iterable<T> filter(Iterable<T> subjects, Matcher<? super T>... valueMatchers) {
-        Matcher<T> combine = AllOf.allOf(valueMatchers);
+        Matcher<T> combine = allOf(valueMatchers);
         Set<T> matches = new HashSet<T>();
         for (T t : subjects) {
             if(combine.matches(t)) matches.add(t);
@@ -39,6 +40,6 @@ public class CollectionMatchers {
      * @return an iterable of matching subjects from the input collection
      */
     public static <T> Iterable<T> filter(T[] subjects, Matcher<? super T>... valueMatchers) {
-        return filter(Arrays.asList(subjects), valueMatchers);
+        return filter(asList(subjects), valueMatchers);
     }
 }
