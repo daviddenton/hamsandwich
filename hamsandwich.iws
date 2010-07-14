@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
@@ -110,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyingMatcher.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ProxyingMatcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="16" selection-start="1330" selection-end="1336" vertical-scroll-proportion="0.94836956">
+            <state line="39" column="16" selection-start="1337" selection-end="1343" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyingMatcherTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ProxyingMatcherTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="23" column="18" selection-start="706" selection-end="706" vertical-scroll-proportion="0.33152175">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +177,8 @@
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CannotAdaptException.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyMatcherBuilder.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
+        <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
       </list>
     </option>
   </component>
@@ -1109,18 +1109,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java">
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+        <state line="39" column="16" selection-start="1337" selection-end="1343" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java">
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="1330" selection-end="1336" vertical-scroll-proportion="0.94836956">
+        <state line="23" column="18" selection-start="706" selection-end="706" vertical-scroll-proportion="0.33152175">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

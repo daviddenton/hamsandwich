@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 
 public class ProxyingMatcher<I, O> extends AdaptingMatcher<I, O> {
 
-    public static <I, O> Matcher<I> proxy(O notUsed, Matcher<O>... valueMatchers) {
+    public static <I, O> Matcher<I> proxyMatcher(O notUsed, Matcher<O>... valueMatchers) {
         return new ProxyingMatcher<I, O>(valueMatchers);
     }
 
