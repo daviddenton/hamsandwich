@@ -7,14 +7,14 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * An adapting Hamcrest matcher which replays a function call and matches the resulting output value.
+ * An adapting Hamcrest matcher which replays a function call on the target object and matches the resulting output value.
  * Can be created with an optional name, otherwise uses the simple class name of the input type for description purposes.
  * Use the static factory methods to create instances, passing the result of the function on().method() call
  *
  * @param <I> The input type.
  * @param <O> The output type.
  */
-public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
+public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     private static final ThreadLocal<InvocationReplayer> INVOCATION_REPLAYER = new ThreadLocal<InvocationReplayer>();
 
     /**
@@ -26,8 +26,8 @@ public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
      * @param <O>           The output type.
      * @return the FunctionMatcher instance
      */
-    public static <I, O> Matcher<I> functionMatcher(O notUsed, Matcher<O>... valueMatchers) {
-        return new FunctionMatcher<I, O>(valueMatchers);
+    public static <I, O> Matcher<I> replayMatcher(O notUsed, Matcher<O>... valueMatchers) {
+        return new ReplayMatcher<I, O>(valueMatchers);
     }
 
     /**
@@ -41,14 +41,14 @@ public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
      * @return the FunctionMatcher instance
      */
     public static <I, O> Matcher<I> functionMatcher(String entityName, O notUsed, Matcher<O>... valueMatchers) {
-        return new FunctionMatcher<I, O>(entityName, valueMatchers);
+        return new ReplayMatcher<I, O>(entityName, valueMatchers);
     }
 
-    private FunctionMatcher(Matcher<? super O>... valueMatchers) {
+    private ReplayMatcher(Matcher<? super O>... valueMatchers) {
         super(valueMatchers);
     }
 
-    private FunctionMatcher(String entityName, Matcher<? super O>... valueMatchers) {
+    private ReplayMatcher(String entityName, Matcher<? super O>... valueMatchers) {
         super(entityName, valueMatchers);
     }
 

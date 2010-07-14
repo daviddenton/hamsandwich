@@ -2,33 +2,48 @@ package org.hamsandwich.core;
 
 import org.junit.Test;
 
+import java.util.UUID;
+
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
-import static org.hamsandwich.core.FunctionMatcher.functionMatcher;
-import static org.hamsandwich.core.FunctionMatcher.on;
+import static org.hamsandwich.core.ReplayMatcher.on;
+import static org.hamsandwich.core.ReplayMatcher.replayMatcher;
 import static org.junit.Assert.assertThat;
 
-public class FunctionMatcherTest {
+public class ReplayMatcherTest {
+
+    @Test
+    @HamSandwichFactory
+    public void matcherReplaysCapturedParameters() throws Exception {
+        UUID unique = UUID.randomUUID();
+        assertThat(new ReflectingBean(), replayMatcher(on(ReflectingBean.class).reflect(unique), is(equalTo((Object) unique))));
+    }
 
     @Test
     @HamSandwichFactory
     public void proxyingMethodThatReturnsANumber() throws Exception {
         int value = 5;
-        assertThat(new NumberBean(5), functionMatcher(on(NumberBean.class).value(), is(equalTo(value))));
+        assertThat(new NumberBean(5), replayMatcher(on(NumberBean.class).value(), is(equalTo(value))));
     }
 
     @Test
     @HamSandwichFactory
     public void proxyingMethodThatReturnsAnObject() throws Exception {
         Object value = "asd";
-        assertThat(new ObjectBean(value), functionMatcher(on(ObjectBean.class).value(), is(equalTo(value))));
+        assertThat(new ObjectBean(value), replayMatcher(on(ObjectBean.class).value(), is(equalTo(value))));
     }
 
     @Test
     @HamSandwichFactory
     public void proxyingMethodThatReturnsABoolean() throws Exception {
         boolean value = true;
-        assertThat(new BooleanBean(value), functionMatcher(on(BooleanBean.class).value(), is(equalTo(value))));
+        assertThat(new BooleanBean(value), replayMatcher(on(BooleanBean.class).value(), is(equalTo(value))));
+    }
+
+    private class ReflectingBean {
+        public Object reflect(Object o) {
+            return o;
+        }
     }
 
     private class NumberBean {
