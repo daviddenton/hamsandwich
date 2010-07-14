@@ -40,7 +40,7 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
      * @param <O>           The output type.
      * @return the FunctionMatcher instance
      */
-    public static <I, O> Matcher<I> functionMatcher(String entityName, O notUsed, Matcher<O>... valueMatchers) {
+    public static <I, O> Matcher<I> replayMatcher(String entityName, O notUsed, Matcher<O>... valueMatchers) {
         return new ReplayMatcher<I, O>(entityName, valueMatchers);
     }
 
