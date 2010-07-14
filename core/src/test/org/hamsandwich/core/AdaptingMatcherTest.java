@@ -22,6 +22,7 @@ public class AdaptingMatcherTest {
         };
     }
 
+    @HamSandwichFactory
     private static Matcher<Boolean> namedCondition(String name, Matcher<Boolean> valueMatcher) {
         return new AdaptingMatcher<Boolean, Boolean>(name, valueMatcher) {
             @Override
@@ -52,7 +53,7 @@ public class AdaptingMatcherTest {
     public void describesExpectedConditionWhenNamed() {
         StringDescription description = new StringDescription();
         namedCondition("aName", is(true)).describeTo(description);
-        assertThat(description.toString(), is(equalTo("[a aName where condition (is <true>)]")));
+        assertThat(description.toString(), is(equalTo("[aName where namedCondition (is <true>)]")));
     }
 
     @Test
