@@ -31,7 +31,7 @@ public class FunctionMatcherTest {
             anInt = number;
         }
 
-        public int getAnInt() {
+        public Integer getAnInt() {
             return anInt;
         }
     }

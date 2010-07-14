@@ -15,6 +15,7 @@ import java.lang.reflect.Method;
  * @param <O> The output type.
  */
 public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
+    private static final ThreadLocal<InvocationReplayer> INVOCATION_REPLAYER = new ThreadLocal<InvocationReplayer>();
 
     /**
      * Creates a replaying function matcher, using the simple class name of the input type for description purposes.
@@ -55,7 +56,7 @@ public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
         return ConcreteClassProxyFactory.INSTANCE.proxyFor(new InvocationHandler() {
             @Override
             public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
-                new ThreadLocal<InvocationReplayer>().set(new InvocationReplayer(method, objects));
+                INVOCATION_REPLAYER.set(new InvocationReplayer(method, objects));
                 return null;
             }
         }, clazz);
@@ -64,7 +65,7 @@ public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
     @Override
     public O get(I in) throws CannotAdaptException {
         try {
-            return (O) new ThreadLocal<InvocationReplayer>().get().replay(in);
+            return (O) INVOCATION_REPLAYER.get().replay(in);
         } catch (IllegalAccessException e) {
             throw new CannotAdaptException(e.getMessage());
         } catch (InvocationTargetException e) {
