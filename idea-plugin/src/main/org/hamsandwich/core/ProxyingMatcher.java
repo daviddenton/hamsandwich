@@ -21,9 +21,9 @@ public class ProxyingMatcher<I, O> extends AdaptingMatcher<I, O> {
         try {
             return (O) handler.replay(in);
         } catch (IllegalAccessException e) {
-            throw new CannotAdaptException();
+            throw new CannotAdaptException(e.getMessage());
         } catch (InvocationTargetException e) {
-            throw new CannotAdaptException();
+            throw new CannotAdaptException(e.getMessage());
         }
     }
 
