@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - added launch project for idea plugin">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path=".idea/workspace.xml" />
@@ -150,7 +146,7 @@
       <file leaf-file-name="CollectionMatchers.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="21" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+            <state line="41" column="61" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,7 +155,7 @@
       <file leaf-file-name="CollectionMatchersTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.33742332">
+            <state line="13" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.398773">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,12 +185,12 @@
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuperEditor.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/CollectionMatchers.java" />
-        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/Adapter.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
       </list>
     </option>
@@ -608,7 +604,7 @@
       <recent name="hamsandwich.example.animals" />
     </key>
   </component>
-  <component name="RunManager" selected="Plugin.Ham Sandwich Filling">
+  <component name="RunManager" selected="JUnit.CollectionMatchersTest">
     <configuration default="false" name="All in core" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="core" />
@@ -621,6 +617,28 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CollectionMatchersTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.CollectionMatchersTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -726,9 +744,10 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in core" />
       <item index="1" class="java.lang.String" itemvalue="Plugin.Ham Sandwich Filling" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionMatchersTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -997,14 +1016,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+        <state line="41" column="61" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.33742332">
+        <state line="13" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.398773">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

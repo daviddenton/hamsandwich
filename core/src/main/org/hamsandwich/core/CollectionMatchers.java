@@ -39,6 +39,6 @@ public class CollectionMatchers {
      * @return an iterable of matching subjects from the input collection
      */
     public static <T> Iterable<T> filter(T[] subjects, Matcher<? super T>... valueMatchers) {
-        return filter(Arrays.asList(subjects));
+        return filter(Arrays.asList(subjects), valueMatchers);
     }
 }
