@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" afterPath="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyingMatcher.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -113,7 +112,7 @@
       <file leaf-file-name="FunctionMatcher.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="73" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.45609066">
+            <state line="48" column="0" selection-start="2154" selection-end="2154" vertical-scroll-proportion="-0.2917847">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,7 +125,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1279145742000" expanded="true" signature="38:334" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1106,7 +1105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1279145742000" expanded="true" signature="38:334" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1120,7 +1119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="73" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.45609066">
+        <state line="48" column="0" selection-start="2154" selection-end="2154" vertical-scroll-proportion="-0.2917847">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

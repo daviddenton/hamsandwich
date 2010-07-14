@@ -40,7 +40,7 @@ public class FunctionMatcher<I, O> extends AdaptingMatcher<I, O> {
      * @return the FunctionMatcher instance
      */
     public static <I, O> Matcher<I> functionMatcher(String entityName, O notUsed, Matcher<O>... valueMatchers) {
-        return new FunctionMatcher<I, O>(valueMatchers);
+        return new FunctionMatcher<I, O>(entityName, valueMatchers);
     }
 
     private FunctionMatcher(Matcher<? super O>... valueMatchers) {
