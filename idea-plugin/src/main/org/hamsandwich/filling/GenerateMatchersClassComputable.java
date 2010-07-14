@@ -4,11 +4,9 @@ import com.intellij.openapi.util.Computable;
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiMethod;
 import com.intellij.psi.PsiModifier;
-import org.hamsandwich.core.CollectionMatchers;
+import org.hamsandwich.core.CollectionFilter;
 
-import static org.hamsandwich.filling.PsiMatchers.noParameters;
-import static org.hamsandwich.filling.PsiMatchers.returnsVoid;
-import static org.hamsandwich.filling.PsiMatchers.signature;
+import static org.hamsandwich.filling.PsiMatchers.*;
 
 public class GenerateMatchersClassComputable implements Computable<PsiClass> {
     private final SuperEditor superEditor;
@@ -30,9 +28,9 @@ public class GenerateMatchersClassComputable implements Computable<PsiClass> {
 
         PsiMethod[] methods = classToBuildFrom.getMethods();
 
-        Iterable<PsiMethod> iterable = CollectionMatchers.filter(methods, signature(noParameters(), returnsVoid()));
+        Iterable<PsiMethod> iterable = CollectionFilter.select(methods, signature(noParameters(), returnsVoid()));
         for (PsiMethod psiMethod : iterable) {
-            
+
 //            baseBuilder.withMethod(new PsiMethodBuilder().build());
         }
         return baseBuilder.build();

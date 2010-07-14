@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - added launch project for idea plugin">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" afterPath="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" afterPath="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionFilterTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
-    <ignored path=".idea/workspace.xml" />
     <ignored path="hamsandwich.iws" />
+    <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,27 +75,7 @@
       <file leaf-file-name="GenerateMatchersClassComputable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="12" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PsiMatchers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="66" selection-start="979" selection-end="990" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PsiType.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiType.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="52" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+            <state line="34" column="12" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,24 +126,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionMatchers.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
+      <file leaf-file-name="CollectionFilter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.72392637">
+            <state line="13" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.07065217">
               <folding>
-                <marker date="1279096455982" expanded="true" signature="38:193" placeholder="..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionMatchersTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
+      <file leaf-file-name="FilmCollectionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="30" column="51" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilmCollection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="19" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionFilterTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionFilterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,9 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMethodBuilder.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiImportListBuilder.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassBuilder.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiHelper.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/EditorActions.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuoerEditor.java" />
@@ -192,8 +188,11 @@
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiClassMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java" />
-        <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java" />
+        <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java" />
+        <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java" />
+        <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionFilterTest.java" />
       </list>
     </option>
   </component>
@@ -391,6 +390,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -547,9 +547,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hamsandwich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="combinableFilters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -569,9 +632,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -606,7 +669,7 @@
       <recent name="hamsandwich.example.animals" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionMatchersTest">
+  <component name="RunManager" selected="JUnit.All in core">
     <configuration default="false" name="All in core" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="core" />
@@ -629,13 +692,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CollectionMatchersTest" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="CollectionFilterTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
-      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.CollectionMatchersTest" />
+      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.CollectionFilterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -671,6 +734,39 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="snapshooter" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -782,24 +878,24 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\dev\hamsandwich\trunk\idea-plugin" />
-          <option name="myCopyRoot" value="C:\dev\hamsandwich\trunk\idea-plugin" />
+          <option name="myVcsRoot" value="$PROJECT_DIR$/core" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/core" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\dev\hamsandwich\trunk\core" />
-          <option name="myCopyRoot" value="C:\dev\hamsandwich\trunk\core" />
+          <option name="myVcsRoot" value="$PROJECT_DIR$/idea-plugin" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/idea-plugin" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\dev\hamsandwich\trunk" />
-          <option name="myCopyRoot" value="C:\dev\hamsandwich\trunk" />
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\dev\hamsandwich\trunk" />
-          <option name="myCopyRoot" value="C:\dev\hamsandwich\trunk" />
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -825,29 +921,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1170" extended-state="0" />
+    <frame x="-6" y="23" width="1285" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.66698563" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.66698563" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986653" sideWeight="0.66191834" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33110046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23109919" sideWeight="0.66698563" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23058252" sideWeight="0.6641337" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32522798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.66698563" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -912,64 +1008,34 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/ide/util/EditSourceUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/idea-plugin/lib/daisy-chain-1.1.jar!/org/daisychain/source/DaisyChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.3333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/idea-plugin/lib/daisy-chain-1.1.jar!/org/daisychain/source/Annotation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.3333333">
-          <folding />
-        </state>
+        <state line="5" column="20" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.3333333" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersFromClassActionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="93" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="16" column="93" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/BooleanAdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="117" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="3" selection-start="117" selection-end="365" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/SuperEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/HierarchicalMethodSignature.class">
+    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="56" selection-start="170" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="66" selection-start="979" selection-end="990" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiMethod.class">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="38" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="52" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
@@ -988,48 +1054,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="47" column="8" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiType.class">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/PsiMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="52" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="65" column="38" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/PsiMatchers.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/psi/HierarchicalMethodSignature.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="66" selection-start="979" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="56" selection-start="170" selection-end="197" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/GenerateMatchersClassComputable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="12" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="34" column="12" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionMatchersTest.java">
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="38" column="19" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionMatchers.java">
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/FilmCollectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.72392637">
+        <state line="30" column="51" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/CollectionFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.07065217">
           <folding>
-            <marker date="1279096455982" expanded="true" signature="38:193" placeholder="..." />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

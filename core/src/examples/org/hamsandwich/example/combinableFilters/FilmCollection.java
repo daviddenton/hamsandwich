@@ -1,6 +1,7 @@
 package org.hamsandwich.example.combinableFilters;
 
 import org.hamcrest.Matcher;
+import org.hamsandwich.core.CollectionFilter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -35,11 +36,7 @@ public class FilmCollection {
         add(aMovieCalled("Trainspotting").a(Comedy).from(1996).starring(actor("Ewan McGregor", Male, Film)).and(actor("Robert Carlyle", Male, Film)).withThemes("Drugs", "Addiction"));
     }};
 
-    public Set<Movie> find(Matcher<Movie> filter) {
-        Set<Movie> results = new HashSet<Movie>();
-        for (Movie movie : COLLECTION) {
-            if (filter.matches(movie)) results.add(movie);
-        }
-        return results;
+    public Iterable<Movie> find(Matcher<Movie> filter) {
+        return new CollectionFilter<Movie>(filter).select(COLLECTION);
     }
 }
