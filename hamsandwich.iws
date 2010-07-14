@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java" afterPath="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -86,19 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackInterrogatingNameResolver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="124" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplayMatcher.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ReplayMatcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="3404" selection-end="3404" vertical-scroll-proportion="-0.6216216">
+            <state line="37" column="0" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,10 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActorMatchers.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActorMatchers.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+            <state line="33" column="21" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.7201087">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Actor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="11" selection-start="77" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,8 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ProxyingMatcher.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/filling/ProxyingMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CannotAdaptException.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/InvocationReplayer.java" />
         <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/ProxyMatcherBuilder.java" />
@@ -191,6 +191,8 @@
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ReplayMatcherTest.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java" />
+        <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java" />
+        <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java" />
       </list>
     </option>
   </component>
@@ -756,114 +758,16 @@
       <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReplayMatcherTest">
-    <configuration default="false" name="CollectionFilterTest" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.All in core">
+    <configuration default="false" name="All in core" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
-      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.CollectionFilterTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ReplayMatcherTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="idea-plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
-      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.ReplayMatcherTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ReplayMatcherTest.proxyingMethodThatReturnsABoolean" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="idea-plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
-      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.ReplayMatcherTest" />
-      <option name="METHOD_NAME" value="proxyingMethodThatReturnsABoolean" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57265" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ReplayMatcherTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
-      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.ReplayMatcherTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57493" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ReplayMatcherTest.notRecordingTheFunctionBlowsUp" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.hamsandwich.core" />
-      <option name="MAIN_CLASS_NAME" value="org.hamsandwich.core.ReplayMatcherTest" />
-      <option name="METHOD_NAME" value="notRecordingTheFunctionBlowsUp" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1005,13 +909,9 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Plugin.Ham Sandwich Filling" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionMatchersTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProxyingMatcherTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FunctionMatcherTest.proxyingMethodThatReturnsABoolean" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionMatcherTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ReplayMatcherTest.notRecordingTheFunctionBlowsUp" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in core" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1183,15 +1083,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/CollectionFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/IsEqualAdaptingMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
@@ -1240,23 +1131,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/MovieMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1300,10 +1177,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3404" selection-end="3404" vertical-scroll-proportion="-0.6216216">
+        <state line="37" column="0" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="77" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="21" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.7201087">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 package org.hamsandwich.example.combinableFilters;
 
 public class Actor {
-    public final String name;
+    private final String name;
     public final Origin origin;
     public final Gender gender;
 
@@ -22,6 +22,10 @@ public class Actor {
                 ", origin=" + origin +
                 ", gender=" + gender +
                 '}';
+    }
+
+    public String name() {
+        return name;
     }
 }
 

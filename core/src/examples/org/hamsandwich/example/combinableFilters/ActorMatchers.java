@@ -7,8 +7,15 @@ import org.hamsandwich.core.HamSandwichFactory;
 
 import static org.hamcrest.Matchers.*;
 import static org.hamsandwich.core.ListUtils.join;
+import static org.hamsandwich.core.ReplayMatcher.on;
+import static org.hamsandwich.core.ReplayMatcher.replayMatcher;
 
 public class ActorMatchers {
+
+    @HamSandwichFactory
+    public static Matcher<Actor> name(Matcher<String>... valueMatchers) {
+        return replayMatcher(on(Actor.class).name(), valueMatchers);
+    }
 
     @HamSandwichFactory
     public static Matcher<Actor> male(Matcher<Actor>... valueMatchers) {
@@ -18,10 +25,6 @@ public class ActorMatchers {
     @HamSandwichFactory
     public static Matcher<Actor> female(Matcher<Actor>... valueMatchers) {
         return aGender(Gender.Female, valueMatchers);
-    }
-
-    private static Matcher aGender(Gender gender, Matcher<Actor>[] valueMatchers) {
-        return allOf(join(gender(gender), valueMatchers).toArray(new Matcher[0]));
     }
 
     @HamSandwichFactory
@@ -42,5 +45,9 @@ public class ActorMatchers {
                 return in.origin;
             }
         };
+    }
+
+    private static Matcher aGender(Gender gender, Matcher<Actor>[] valueMatchers) {
+        return allOf(join(gender(gender), valueMatchers).toArray(new Matcher[0]));
     }
 }
