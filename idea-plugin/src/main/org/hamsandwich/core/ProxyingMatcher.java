@@ -36,4 +36,18 @@ public class ProxyingMatcher<I, O> extends AdaptingMatcher<I, O> {
             throw new CannotAdaptException(e.getMessage());
         }
     }
+
+    private static class InvocationReplayer {
+        private final Method method;
+        private final Object[] params;
+
+        public InvocationReplayer(Method method, Object[] params) {
+            this.method = method;
+            this.params = params;
+        }
+
+        public Object replay(Object in) throws InvocationTargetException, IllegalAccessException {
+            return method.invoke(in, params);
+        }
+    }
 }
