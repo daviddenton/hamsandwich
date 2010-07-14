@@ -22,6 +22,15 @@ public class AdaptingMatcherTest {
         };
     }
 
+    private static Matcher<Boolean> namedCondition(String name, Matcher<Boolean> valueMatcher) {
+        return new AdaptingMatcher<Boolean, Boolean>(name, valueMatcher) {
+            @Override
+            public Boolean get(Boolean in) throws CannotAdaptException {
+                return in;
+            }
+        };
+    }
+
     @Test
     public void succeedsWhenNestedMatcherSucceeds() {
         assertTrue(condition(is(true)).matches(true));
@@ -37,6 +46,13 @@ public class AdaptingMatcherTest {
         StringDescription description = new StringDescription();
         condition(is(true)).describeTo(description);
         assertThat(description.toString(), is(equalTo("[a Boolean where condition (is <true>)]")));
+    }
+
+    @Test
+    public void describesExpectedConditionWhenNamed() {
+        StringDescription description = new StringDescription();
+        namedCondition("aName", is(true)).describeTo(description);
+        assertThat(description.toString(), is(equalTo("[a aName where condition (is <true>)]")));
     }
 
     @Test
