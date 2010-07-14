@@ -19,6 +19,13 @@ public class ReplayMatcherTest {
         assertThat(new ReflectingBean(), replayMatcher(on(ReflectingBean.class).reflect(unique), is(equalTo((Object) unique))));
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    @HamSandwichFactory
+    public void notRecordingTheFunctionBlowsUp() throws Exception {
+        Object target = new Object();
+        replayMatcher(target.hashCode(), is(equalTo(target.hashCode())));
+    }
+
     @Test
     @HamSandwichFactory
     public void proxyingMethodThatReturnsANumber() throws Exception {

@@ -16,40 +16,58 @@ import java.lang.reflect.Method;
  */
 public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     private static final ThreadLocal<InvocationReplayer> INVOCATION_REPLAYER = new ThreadLocal<InvocationReplayer>();
+    private final InvocationReplayer invocationReplayer;
 
     /**
      * Creates a replaying function matcher, using the simple class name of the input type for description purposes.
      *
-     * @param notUsed       pass in the function to be replayed here. Use the static on() method to record this function.
-     * @param valueMatchers the delegated matchers for the output of the adaption.
-     * @param <I>           The input type.
-     * @param <O>           The output type.
+     * @param functionResult pass in the function to be replayed here. Use the static on() method to record this function.
+     * @param valueMatchers  the delegated matchers for the output of the adaption.
+     * @param <I>            The input type.
+     * @param <O>            The output type.
      * @return the FunctionMatcher instance
      */
-    public static <I, O> Matcher<I> replayMatcher(O notUsed, Matcher<O>... valueMatchers) {
-        return new ReplayMatcher<I, O>(valueMatchers);
+    public static <I, O> Matcher<I> replayMatcher(O functionResult, Matcher<O>... valueMatchers) {
+        try {
+            assertThatFunctionHasBeenRecorded();
+            return new ReplayMatcher<I, O>(INVOCATION_REPLAYER.get(), valueMatchers);
+        } finally {
+            INVOCATION_REPLAYER.remove();
+        }
     }
 
     /**
      * Creates a replaying function matcher, using the passed entity name for description purposes.
      *
-     * @param entityName    the assigned name of the matched entity, used for description purposes.
-     * @param notUsed       pass in the function to be replayed here. Use the static on() method to record this function.
-     * @param valueMatchers the delegated matchers for the output of the adaption.
-     * @param <I>           The input type.
-     * @param <O>           The output type.
+     * @param entityName     the assigned name of the matched entity, used for description purposes.
+     * @param functionResult pass in the function to be replayed here. Use the static on() method to record this function.
+     * @param valueMatchers  the delegated matchers for the output of the adaption.
+     * @param <I>            The input type.
+     * @param <O>            The output type.
      * @return the FunctionMatcher instance
      */
-    public static <I, O> Matcher<I> replayMatcher(String entityName, O notUsed, Matcher<O>... valueMatchers) {
-        return new ReplayMatcher<I, O>(entityName, valueMatchers);
+    public static <I, O> Matcher<I> replayMatcher(String entityName, O functionResult, Matcher<O>... valueMatchers) {
+        try {
+            assertThatFunctionHasBeenRecorded();
+            return new ReplayMatcher<I, O>(entityName, INVOCATION_REPLAYER.get(), valueMatchers);
+        } finally {
+            INVOCATION_REPLAYER.remove();
+        }
     }
 
-    private ReplayMatcher(Matcher<? super O>... valueMatchers) {
+    private static void assertThatFunctionHasBeenRecorded() {
+        if (INVOCATION_REPLAYER.get() == null)
+            throw new IllegalArgumentException("Function was not recorded. Did you pass use the on(Class) factory method to create the functionResult?");
+    }
+
+    private ReplayMatcher(InvocationReplayer invocationReplayer, Matcher<? super O>... valueMatchers) {
         super(valueMatchers);
+        this.invocationReplayer = invocationReplayer;
     }
 
-    private ReplayMatcher(String entityName, Matcher<? super O>... valueMatchers) {
+    private ReplayMatcher(String entityName, InvocationReplayer invocationReplayer, Matcher<? super O>... valueMatchers) {
         super(entityName, valueMatchers);
+        this.invocationReplayer = invocationReplayer;
     }
 
     public static <T> T on(Class<T> clazz) {
@@ -67,7 +85,7 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     @Override
     public O get(I in) throws CannotAdaptException {
         try {
-            return (O) INVOCATION_REPLAYER.get().replay(in);
+            return (O) invocationReplayer.replay(in);
         } catch (IllegalAccessException e) {
             throw new CannotAdaptException(e.getMessage());
         } catch (InvocationTargetException e) {
