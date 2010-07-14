@@ -7,9 +7,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * An adapting Hamcrest matcher which replays a function call on the target object and matches the resulting output value.
+ * An adapting Hamcrest matcher which replays a method call on the target object and matches the resulting output value.
  * Can be created with an optional name, otherwise uses the simple class name of the input type for description purposes.
- * Use the static factory methods to create instances, passing the result of the function on().method() call
+ * Use the static factory methods to create instances, passing the result of the on().method() call
  *
  * @param <I> The input type.
  * @param <O> The output type.
@@ -19,15 +19,15 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     private final InvocationReplayer invocationReplayer;
 
     /**
-     * Creates a replaying function matcher, using the simple class name of the input type for description purposes.
+     * Creates a method replaying matcher, using the simple class name of the input type for description purposes.
      *
-     * @param functionResult pass in the function to be replayed here. Use the static on() method to record this function.
-     * @param valueMatchers  the delegated matchers for the output of the adaption.
-     * @param <I>            The input type.
-     * @param <O>            The output type.
-     * @return the FunctionMatcher instance
+     * @param methodCallResult pass in the method recording call to be replayed here. Use the static on() method to record this call.
+     * @param valueMatchers    the delegated matchers for the output of the adaption.
+     * @param <I>              The input type.
+     * @param <O>              The output type.
+     * @return the Matcher instance
      */
-    public static <I, O> Matcher<I> replayMatcher(O functionResult, Matcher<O>... valueMatchers) {
+    public static <I, O> Matcher<I> replayMatcher(O methodCallResult, Matcher<O>... valueMatchers) {
         try {
             assertThatFunctionHasBeenRecorded();
             return new ReplayMatcher<I, O>(INVOCATION_REPLAYER.get(), valueMatchers);
@@ -37,16 +37,16 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     }
 
     /**
-     * Creates a replaying function matcher, using the passed entity name for description purposes.
+     * Creates a method replaying matcher, using the passed entity name for description purposes.
      *
-     * @param entityName     the assigned name of the matched entity, used for description purposes.
-     * @param functionResult pass in the function to be replayed here. Use the static on() method to record this function.
-     * @param valueMatchers  the delegated matchers for the output of the adaption.
-     * @param <I>            The input type.
-     * @param <O>            The output type.
-     * @return the FunctionMatcher instance
+     * @param entityName       the assigned name of the matched entity, used for description purposes.
+     * @param methodCallResult pass in the method recording call to be replayed here. Use the static on() method to record this call.
+     * @param valueMatchers    the delegated matchers for the output of the adaption.
+     * @param <I>              The input type.
+     * @param <O>              The output type.
+     * @return the Matcher instance
      */
-    public static <I, O> Matcher<I> replayMatcher(String entityName, O functionResult, Matcher<O>... valueMatchers) {
+    public static <I, O> Matcher<I> replayMatcher(String entityName, O methodCallResult, Matcher<O>... valueMatchers) {
         try {
             assertThatFunctionHasBeenRecorded();
             return new ReplayMatcher<I, O>(entityName, INVOCATION_REPLAYER.get(), valueMatchers);
@@ -70,6 +70,14 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
         this.invocationReplayer = invocationReplayer;
     }
 
+    /**
+     * Create a method call recorder for the passed class. The return object should only be used to create a recorder
+     * for a replay matcher (i.e. in the creation method).
+     *
+     * @param clazz the class to create the function recorded for. This cannot be final.
+     * @param <T>   the type of class to proxy.
+     * @return a proxy of the passed class which will record the next method called on it.
+     */
     public static <T> T on(Class<T> clazz) {
         return ConcreteClassProxyFactory.INSTANCE.proxyFor(new InvocationHandler() {
             @Override
