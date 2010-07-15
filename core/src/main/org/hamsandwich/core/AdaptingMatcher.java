@@ -66,13 +66,13 @@ public abstract class AdaptingMatcher<I, O> extends TypeSafeMatcher<I> implement
 
     @Override
     public void describeMismatch(Object o, Description description) {
-        if (GenericUtils.getGenerifiedClassesOf(this).get(0) == o.getClass()) {
-            try {
-                valueMatcher.describeMismatch(get((I) o), description);
-                return;
-            } catch (CannotAdaptException cannotAdaptException) {
-                // fall through
-            }
+        try {
+            valueMatcher.describeMismatch(get((I) o), description);
+            return;
+        } catch (ClassCastException cce) {
+            // fall through
+        } catch (CannotAdaptException cannotAdaptException) {
+            // fall through
         }
         super.describeMismatch(o, description);
     }

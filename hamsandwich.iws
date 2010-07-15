@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="">
+    <list default="true" readonly="true" id="7ab9cd20-52a9-447a-a951-dd46f9071cab" name="Default" comment="dirty - tweak to the adapting matcher to not attempt to match class on failure. allow for ClassCastException instead">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java" afterPath="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamsandwich.iws" afterPath="$PROJECT_DIR$/hamsandwich.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/readme.txt" afterPath="$PROJECT_DIR$/core/readme.txt" />
     </list>
     <list id="3d4d4e2d-1850-4ebe-9608-457051c175bf" name="PROJECT" comment="" />
     <ignored path="hamsandwich.iws" />
@@ -78,10 +78,59 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AdaptingMatcher.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="13" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.5227882">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OldAppleTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/OldAppleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="16" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest_v4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplayMatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="46" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplayMatcherTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ReplayMatcherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="23" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PersonMatchers.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="0" selection-end="868" vertical-scroll-proportion="0.0">
+            <state line="15" column="5" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,37 +147,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="75" selection-start="184" selection-end="184" vertical-scroll-proportion="0.16085792">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonTest_v4.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonTest_v3.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+            <state line="5" column="75" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,24 +160,6 @@
         <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonTest_v2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apple.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/Apple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,22 +178,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/ProxyingMatcherTest.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcher.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
-        <option value="$PROJECT_DIR$/idea-plugin/src/main/org/hamsandwich/core/FunctionMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ConcreteClassProxyFactory.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java" />
         <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/StackInterrogatingNameResolver.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/FunctionMatcherTest.java" />
         <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ReplayMatcherTest.java" />
-        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java" />
         <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/Person.java" />
-        <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" />
         <option value="$PROJECT_DIR$/core/readme.txt" />
+        <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcherBuilder.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java" />
+        <option value="$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ReplayMatcherBuilderTest.java" />
+        <option value="$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java" />
+        <option value="$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java" />
       </list>
     </option>
   </component>
@@ -722,6 +726,123 @@
       <recent name="$PROJECT_DIR$/src/main/hamsandwich/core" />
     </key>
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="15/07/10 19:48" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="svn" revision="91">$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java</PATH>
+            <PATH vcs="svn" revision="91">$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java</PATH>
+            <PATH vcs="svn" revision="91">$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v3.java</PATH>
+            <PATH vcs="svn" revision="91">$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="svn" revision="91">$PROJECT_DIR$/core/src/test/org/hamsandwich/core/GenericUtilsTest.java</PATH>
+            <PATH vcs="svn" revision="91">$PROJECT_DIR$/core/src/main/org/hamsandwich/core/GenericUtils.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Will be merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager" selected="JUnit.All in core">
     <configuration default="false" name="All in core" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
@@ -954,10 +1075,10 @@
     <frame x="-7" y="22" width="1285" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.66698563" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919094" sideWeight="0.66109425" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20212767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1048,45 +1169,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/HamSandwichMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="5" selection-start="4481" selection-end="4481" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ReplayMatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/AdaptingMatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="77" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/combinableFilters/ActorMatchers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="21" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
@@ -1099,13 +1181,6 @@
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/Apple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1124,13 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
@@ -1145,15 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="0" selection-end="868" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/package.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="-4.2">
@@ -1163,7 +1222,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="75" selection-start="184" selection-end="184" vertical-scroll-proportion="0.16085792">
+        <state line="5" column="75" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/AppleMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/org/hamsandwich/core/ReplayMatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="23" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/ReplayMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="46" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/testMatchers/OldAppleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="16" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/examples/org/hamsandwich/example/wiki/PersonTest_v4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/org/hamsandwich/core/AdaptingMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="13" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.5227882">
           <folding />
         </state>
       </provider>
