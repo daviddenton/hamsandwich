@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.hamsandwich.example.wiki.PersonMatchers.age;
+import static org.hamsandwich.example.wiki.PersonMatchers.ageInADecade;
 import static org.hamsandwich.example.wiki.PersonMatchers.name;
 
 public class PersonTest_v3 {
@@ -17,7 +17,7 @@ public class PersonTest_v3 {
         assertThat(dave,
                 allOf(
                         name(is(equalTo("Dave"))),
-                        age(is(equalTo(33)), is(lessThan(alan.age)))
+                        ageInADecade(is(equalTo(43)), is(lessThan(alan.age)))
                 )
         );
     }

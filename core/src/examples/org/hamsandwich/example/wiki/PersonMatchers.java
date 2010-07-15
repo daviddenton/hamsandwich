@@ -16,11 +16,11 @@ public class PersonMatchers {
     }
 
     @HamSandwichFactory
-    public static Matcher<Person> age(Matcher<? super Integer>... ageMatchers) {
+    public static Matcher<Person> ageInADecade(Matcher<? super Integer>... ageMatchers) {
         return new AdaptingMatcher<Person, Integer>(ageMatchers) {
             @Override
             public Integer get(Person in) throws CannotAdaptException {
-                return in.age;
+                return in.age + 10;
             }
         };
     }
