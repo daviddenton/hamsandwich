@@ -61,7 +61,7 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     }
 
     private ReplayMatcher(InvocationReplayer invocationReplayer, Matcher<? super O>... valueMatchers) {
-        super(valueMatchers);
+        super(invocationReplayer.clazz.getSimpleName(), valueMatchers);
         this.invocationReplayer = invocationReplayer;
     }
 
@@ -78,11 +78,11 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
      * @param <T>   the type of class to proxy.
      * @return a proxy of the passed class which will record the next method called on it.
      */
-    public static <T> T on(Class<T> clazz) {
+    public static <T> T on(final Class<T> clazz) {
         return ConcreteClassProxyFactory.INSTANCE.proxyFor(new InvocationHandler() {
             @Override
             public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
-                INVOCATION_REPLAYER.set(new InvocationReplayer(method, objects));
+                INVOCATION_REPLAYER.set(new InvocationReplayer(method, objects, clazz));
                 if (method.getReturnType().getName().equals("boolean")) return false;
                 if (method.getReturnType().isPrimitive()) return 0;
                 return null;
@@ -102,12 +102,14 @@ public class ReplayMatcher<I, O> extends AdaptingMatcher<I, O> {
     }
 
     private static class InvocationReplayer {
+        public final Class clazz;
         private final Method method;
         private final Object[] params;
 
-        public InvocationReplayer(Method method, Object[] params) {
+        public InvocationReplayer(Method method, Object[] params, Class clazz) {
             this.method = method;
             this.params = params;
+            this.clazz = clazz;
         }
 
         public Object replay(Object in) throws InvocationTargetException, IllegalAccessException {
