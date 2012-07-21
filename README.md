@@ -205,7 +205,7 @@ Expected: ([Person where name (is "Mark")] and [a Person where ageInADecade (is 
 ###And Finally...
 It is also possible (nay, desirable!) to use these Matchers in production code as a filtering mechanic and there is an example of this usage included in the Zip distribution. An interesting benefit of the Hamcrest SelfDescribing functionality is that these Matchers generate human-readable descriptions from the describeTo() and toString() methods.
 
-The library will also hugely benefit from the introduction of Closures in Java7 (whenever that turns up), as the implementation of the get() method on AdaptingMatcher can be replaced by a Closure passed into the constructor, thus cleaning up a lot of code in the Factory methods.
+The library will also hugely benefit from the introduction of *real* closures in Java8 (whenever that turns up), as the implementation of the get() method on AdaptingMatcher can be replaced by a closure passed into the constructor, thus cleaning up a lot of code in the Factory methods.
 
 Have a play. Let us know what you think.
 
