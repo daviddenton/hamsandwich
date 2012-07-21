@@ -93,7 +93,7 @@ public class PersonTest {
 This is a quite ugly and ends up with all of the expected details being passed around, along with the object under test.
 
 ###Alternatively...
-Using a HamSandwich? Matcher you can extract and group the common assertions, providing reuse in a Functional Style without hampering readability. To do so:
+Using a HamSandwich Matcher you can extract and group the common assertions, providing reuse in a Functional Style without hampering readability. To do so:
 
 1. Decide on the common conditions that you want to assert on. These are typically fields, but you can build up less granular, more complex Matchers by composition. In the above example, we will use the name and age fields of the Person class.
 
