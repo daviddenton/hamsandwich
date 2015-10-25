@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Hamsandwich : Too clever for it's own good" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Hamsandwich</title>
+    <meta charset="UTF-8">
+    <title>Hamsandwich by daviddenton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Hamsandwich</h1>
+      <h2 class="project-tagline">Too clever for it&#39;s own good</h2>
+      <a href="https://github.com/daviddenton/hamsandwich" class="btn">View on GitHub</a>
+      <a href="https://github.com/daviddenton/hamsandwich/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/daviddenton/hamsandwich/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/daviddenton/hamsandwich">View on GitHub</a>
+    <section class="main-content">
+      <h2>
+<a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tutorial</h2>
 
-          <h1 id="project_title">Hamsandwich</h1>
-          <h2 id="project_tagline">Too clever for it's own good</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/daviddenton/hamsandwich/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/daviddenton/hamsandwich/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>Tutorial</h2>
-
-<h3>Installation</h3>
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
 
 <ol>
 <li>Download a binary package from here. The Zip distribution contains all of the Javadoc, dependencies and source code for the project.</li>
-</ol><p>or:</p>
+</ol>
+
+<p>or:</p>
 
 <ol>
-<li>Check out the source code from here and build it manually. Prerequisites:</li>
-</ol><ul>
+<li><p>Check out the source code from here and build it manually. Prerequisites:</p></li>
+</ol>
+
+<ul>
 <li>Java 1.6</li>
 <li>Ant (we use v1.8)</li>
 <li>JUnit no dependencies version: junit-dep-.jar - (we use v4.8.1)
 Simply type ant or ant build at the command line.in the "core" folder</li>
-</ul><h3>Getting Started</h3>
+</ul>
+
+<h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h3>
 
 <p>If you're not familiar with the concept of Matchers and why they're ace, then it's probably a good idea to start with the Hamcrest Tutorial.</p>
 
@@ -54,186 +51,186 @@ Simply type ant or ant build at the command line.in the "core" folder</li>
 
 <p>Say we have an simple object:</p>
 
-<div class="highlight"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">;</span>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">package</span> <span class="pl-smi">org.hamsandwich.example.wiki</span>;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">Person</span> {
 
-    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">public</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> name;
+    <span class="pl-k">public</span> <span class="pl-k">final</span> <span class="pl-k">int</span> age;
 
-    <span class="kd">public</span> <span class="nf">Person</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
-    <span class="o">}</span>
+    <span class="pl-k">public</span> <span class="pl-en">Person</span>(<span class="pl-smi">String</span> <span class="pl-v">name</span>, <span class="pl-k">int</span> <span class="pl-v">age</span>) {
+        <span class="pl-v">this</span><span class="pl-k">.</span>name <span class="pl-k">=</span> name;
+        <span class="pl-v">this</span><span class="pl-k">.</span>age <span class="pl-k">=</span> age;
+    }
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
+    <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">getName</span>() {
+        <span class="pl-k">return</span> name;
+    }
+}</pre></div>
 
 <p>... and a test for that class:</p>
 
-<div class="highlight"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">;</span>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">package</span> <span class="pl-smi">org.hamsandwich.example.wiki</span>;
 
-<span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
+<span class="pl-k">import</span> <span class="pl-smi">org.junit.Test</span>;
 
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">MatcherAssert</span><span class="o">.</span><span class="na">assertThat</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">Matchers</span><span class="o">.*;</span>
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.MatcherAssert.assertThat</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.Matchers.*</span>;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PersonTest</span> <span class="o">{</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">PersonTest</span> {
 
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">detailsStoredProperly</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">Person</span> <span class="n">dave</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Dave"</span><span class="o">,</span> <span class="mi">33</span><span class="o">);</span>
-        <span class="n">Person</span> <span class="n">alan</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Alan"</span><span class="o">,</span> <span class="mi">65</span><span class="o">);</span>
+    <span class="pl-k">@Test</span>
+    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">detailsStoredProperly</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {
+        <span class="pl-smi">Person</span> dave <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>, <span class="pl-c1">33</span>);
+        <span class="pl-smi">Person</span> alan <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Alan<span class="pl-pds">"</span></span>, <span class="pl-c1">65</span>);
 
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">dave</span><span class="o">.</span><span class="na">getName</span><span class="o">(),</span> <span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="s">"Dave"</span><span class="o">)));</span>
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">dave</span><span class="o">.</span><span class="na">age</span><span class="o">+</span><span class="mi">10</span><span class="o">,</span> <span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="mi">43</span><span class="o">)));</span>
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">dave</span><span class="o">.</span><span class="na">age</span><span class="o">,</span> <span class="n">is</span><span class="o">(</span><span class="n">lessThan</span><span class="o">(</span><span class="n">alan</span><span class="o">.</span><span class="na">age</span><span class="o">)));</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
+        assertThat(dave<span class="pl-k">.</span>getName(), is(equalTo(<span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>)));
+        assertThat(dave<span class="pl-k">.</span>age<span class="pl-k">+</span><span class="pl-c1">10</span>, is(equalTo(<span class="pl-c1">43</span>)));
+        assertThat(dave<span class="pl-k">.</span>age, is(lessThan(alan<span class="pl-k">.</span>age)));
+    }
+}</pre></div>
 
 <p>Each of the assertions needs to be declared on a separate line in the test. This approach does give us a nice stack trace if the test fails with the line number so you can easily determine which assertion failed, along with a message from the matcher indicating what went wrong.</p>
 
 <p>The downside of this approach is that there is no way to easily group the various assertions into reusable modules, save for extracting a method which contains the 3 assertThat() calls, which would end up something like:</p>
 
-<div class="highlight"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">;</span>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">package</span> <span class="pl-smi">org.hamsandwich.example.wiki</span>;
 
-<span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
+<span class="pl-k">import</span> <span class="pl-smi">org.junit.Test</span>;
 
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">MatcherAssert</span><span class="o">.</span><span class="na">assertThat</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">Matchers</span><span class="o">.*;</span>
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.MatcherAssert.assertThat</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.Matchers.*</span>;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PersonTest</span> <span class="o">{</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">PersonTest</span> {
 
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">detailsStoredProperly</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">Person</span> <span class="n">dave</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Dave"</span><span class="o">,</span> <span class="mi">33</span><span class="o">);</span>
-        <span class="n">Person</span> <span class="n">alan</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Alan"</span><span class="o">,</span> <span class="mi">65</span><span class="o">);</span>
+    <span class="pl-k">@Test</span>
+    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">detailsStoredProperly</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {
+        <span class="pl-smi">Person</span> dave <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>, <span class="pl-c1">33</span>);
+        <span class="pl-smi">Person</span> alan <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Alan<span class="pl-pds">"</span></span>, <span class="pl-c1">65</span>);
 
-        <span class="n">assertThePersonDetailsAgainst</span><span class="o">(</span><span class="n">dave</span><span class="o">,</span> <span class="n">alan</span><span class="o">,</span> <span class="s">"Dave"</span><span class="o">,</span> <span class="mi">43</span><span class="o">);</span>
-    <span class="o">}</span>
+        assertThePersonDetailsAgainst(dave, alan, <span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>, <span class="pl-c1">43</span>);
+    }
 
-    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">assertThePersonDetailsAgainst</span><span class="o">(</span><span class="n">Person</span> <span class="n">actual</span><span class="o">,</span> <span class="n">Person</span> <span class="n">elderPerson</span><span class="o">,</span> <span class="n">String</span> <span class="n">expectedName</span><span class="o">,</span> <span class="kt">int</span> <span class="n">expectedAge</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">actual</span><span class="o">.</span><span class="na">getName</span><span class="o">(),</span> <span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="n">expectedName</span><span class="o">)));</span>
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">actual</span><span class="o">.</span><span class="na">age</span><span class="o">+</span><span class="mi">10</span><span class="o">,</span> <span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="n">expectedAge</span><span class="o">)));</span>
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">actual</span><span class="o">.</span><span class="na">age</span><span class="o">,</span> <span class="n">is</span><span class="o">(</span><span class="n">lessThan</span><span class="o">(</span><span class="n">elderPerson</span><span class="o">.</span><span class="na">age</span><span class="o">)));</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
+    <span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">assertThePersonDetailsAgainst</span>(<span class="pl-smi">Person</span> <span class="pl-v">actual</span>, <span class="pl-smi">Person</span> <span class="pl-v">elderPerson</span>, <span class="pl-smi">String</span> <span class="pl-v">expectedName</span>, <span class="pl-k">int</span> <span class="pl-v">expectedAge</span>) {
+        assertThat(actual<span class="pl-k">.</span>getName(), is(equalTo(expectedName)));
+        assertThat(actual<span class="pl-k">.</span>age<span class="pl-k">+</span><span class="pl-c1">10</span>, is(equalTo(expectedAge)));
+        assertThat(actual<span class="pl-k">.</span>age, is(lessThan(elderPerson<span class="pl-k">.</span>age)));
+    }
+}</pre></div>
 
 <p>This is a quite ugly and ends up with all of the expected details being passed around, along with the object under test.</p>
 
-<h3>Alternatively...</h3>
+<h3>
+<a id="alternatively" class="anchor" href="#alternatively" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternatively...</h3>
 
 <p>Using a HamSandwich Matcher you can extract and group the common assertions, providing reuse in a Functional Style without hampering readability. To do so:</p>
 
 <ol>
 <li><p>Decide on the common conditions that you want to assert on. These are typically fields, but you can build up less granular, more complex Matchers by composition. In the above example, we will use the name and age fields of the Person class.</p></li>
 <li><p>Declare a factory method for each condition annotated with @HamSandwichFactory which will return a subclass of the AdaptingMatcher. This class requires the get() method to be implemented, which describes how to translate the input object (Person), into the output object (name -&gt; String, age -&gt; Integer). Alternatively, you can use a factory method to create a function replaying matcher (as done below for getName()). In this example we have grouped these methods onto a single utility class:</p></li>
-</ol><div class="highlight"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">;</span>
+</ol>
 
-<span class="kn">import</span> <span class="nn">org.hamcrest.Matcher</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.hamsandwich.core.AdaptingMatcher</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.hamsandwich.core.CannotAdaptException</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.hamsandwich.core.HamSandwichFactory</span><span class="o">;</span>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">package</span> <span class="pl-smi">org.hamsandwich.example.wiki</span>;
 
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">core</span><span class="o">.</span><span class="na">ReplayMatcher</span><span class="o">.</span><span class="na">on</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">core</span><span class="o">.</span><span class="na">ReplayMatcher</span><span class="o">.</span><span class="na">replayMatcher</span><span class="o">;</span>
+<span class="pl-k">import</span> <span class="pl-smi">org.hamcrest.Matcher</span>;
+<span class="pl-k">import</span> <span class="pl-smi">org.hamsandwich.core.AdaptingMatcher</span>;
+<span class="pl-k">import</span> <span class="pl-smi">org.hamsandwich.core.CannotAdaptException</span>;
+<span class="pl-k">import</span> <span class="pl-smi">org.hamsandwich.core.HamSandwichFactory</span>;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PersonMatchers</span> <span class="o">{</span>
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamsandwich.core.ReplayMatcher.on</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamsandwich.core.ReplayMatcher.replayMatcher</span>;
 
-    <span class="nd">@HamSandwichFactory</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Matcher</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span> <span class="n">name</span><span class="o">(</span><span class="n">Matcher</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;...</span> <span class="n">nameMatchers</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="nf">replayMatcher</span><span class="o">(</span><span class="n">on</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">).</span><span class="na">getName</span><span class="o">(),</span> <span class="n">nameMatchers</span><span class="o">);</span>
-    <span class="o">}</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">PersonMatchers</span> {
 
-    <span class="nd">@HamSandwichFactory</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Matcher</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span> <span class="n">ageInADecade</span><span class="o">(</span><span class="n">Matcher</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Integer</span><span class="o">&gt;...</span> <span class="n">ageMatchers</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="k">new</span> <span class="n">AdaptingMatcher</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;(</span><span class="n">ageMatchers</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="n">Integer</span> <span class="nf">get</span><span class="o">(</span><span class="n">Person</span> <span class="n">in</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">CannotAdaptException</span> <span class="o">{</span>
-                <span class="k">return</span> <span class="n">in</span><span class="o">.</span><span class="na">age</span> <span class="o">+</span> <span class="mi">10</span><span class="o">;</span>
-            <span class="o">}</span>
-        <span class="o">};</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
+    <span class="pl-k">@HamSandwichFactory</span>
+    <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">Matcher&lt;<span class="pl-smi">Person</span>&gt;</span> <span class="pl-en">name</span>(<span class="pl-k">Matcher&lt;<span class="pl-smi">String</span>&gt;</span>... <span class="pl-v">nameMatchers</span>) {
+        <span class="pl-k">return</span> replayMatcher(on(<span class="pl-smi">Person</span><span class="pl-k">.</span>class)<span class="pl-k">.</span>getName(), nameMatchers);
+    }
+
+    <span class="pl-k">@HamSandwichFactory</span>
+    <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">Matcher&lt;<span class="pl-smi">Person</span>&gt;</span> <span class="pl-en">ageInADecade</span>(<span class="pl-k">Matcher&lt;? super <span class="pl-smi">Integer</span>&gt;</span>... <span class="pl-v">ageMatchers</span>) {
+        <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">AdaptingMatcher&lt;<span class="pl-smi">Person</span>, <span class="pl-smi">Integer</span>&gt;</span>(ageMatchers) {
+            <span class="pl-k">@Override</span>
+            <span class="pl-k">public</span> <span class="pl-smi">Integer</span> <span class="pl-en">get</span>(<span class="pl-smi">Person</span> <span class="pl-v">in</span>) <span class="pl-k">throws</span> <span class="pl-smi">CannotAdaptException</span> {
+                <span class="pl-k">return</span> in<span class="pl-k">.</span>age <span class="pl-k">+</span> <span class="pl-c1">10</span>;
+            }
+        };
+    }
+}</pre></div>
 
 <p>Note that the generics definition above involving super definitions Matcher is required at the moment because of an issue with the version (1.3RC1) of Hamcrest that ships with HamSandwich?. This should be fixed soon in v1.3 as soon as it goes gold. In addition, the generics used above can be omitted from the signatures of these methods if required or desired. However, doing so will generate compiler warnings in your IDE.</p>
 
 <ol>
 <li>You can now rewrite the test in order to use the above matchers:</li>
-</ol><div class="highlight"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">;</span>
+</ol>
 
-<span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">package</span> <span class="pl-smi">org.hamsandwich.example.wiki</span>;
 
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">MatcherAssert</span><span class="o">.</span><span class="na">assertThat</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">Matchers</span><span class="o">.*;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">.</span><span class="na">PersonMatchers</span><span class="o">.</span><span class="na">ageInADecade</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">.</span><span class="na">PersonMatchers</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+<span class="pl-k">import</span> <span class="pl-smi">org.junit.Test</span>;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PersonTest</span> <span class="o">{</span>
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.MatcherAssert.assertThat</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.Matchers.*</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamsandwich.example.wiki.PersonMatchers.ageInADecade</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamsandwich.example.wiki.PersonMatchers.name</span>;
 
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">detailsStoredProperly</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">Person</span> <span class="n">dave</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Dave"</span><span class="o">,</span> <span class="mi">33</span><span class="o">);</span>
-        <span class="n">Person</span> <span class="n">alan</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Alan"</span><span class="o">,</span> <span class="mi">65</span><span class="o">);</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">PersonTest</span> {
 
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">dave</span><span class="o">,</span>
-                <span class="n">allOf</span><span class="o">(</span>
-                        <span class="n">name</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="s">"Dave"</span><span class="o">))),</span>
-                        <span class="n">ageInADecade</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="mi">43</span><span class="o">)),</span> <span class="n">is</span><span class="o">(</span><span class="n">lessThan</span><span class="o">(</span><span class="n">alan</span><span class="o">.</span><span class="na">age</span><span class="o">)))</span>
-                <span class="o">)</span>
-        <span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
+    <span class="pl-k">@Test</span>
+    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">detailsStoredProperly</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {
+        <span class="pl-smi">Person</span> dave <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>, <span class="pl-c1">33</span>);
+        <span class="pl-smi">Person</span> alan <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Alan<span class="pl-pds">"</span></span>, <span class="pl-c1">65</span>);
+
+        assertThat(dave,
+                allOf(
+                        name(is(equalTo(<span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>))),
+                        ageInADecade(is(equalTo(<span class="pl-c1">43</span>)), is(lessThan(alan<span class="pl-k">.</span>age)))
+                )
+        );
+    }
+}</pre></div>
 
 <p>We now have a single call to assertThat() passing in the dave instance, and have also combined the assertions for age into a single variable which itself can be extracted and reused.</p>
 
-<h3>"But what about the knowing where the test failed?", I hear you cry...</h3>
+<h3>
+<a id="but-what-about-the-knowing-where-the-test-failed-i-hear-you-cry" class="anchor" href="#but-what-about-the-knowing-where-the-test-failed-i-hear-you-cry" aria-hidden="true"><span class="octicon octicon-link"></span></a>"But what about the knowing where the test failed?", I hear you cry...</h3>
 
 <p>Well, firstly, the original version of the test lets you know the exact line number of the assertion failure, but that is actually duplicate information - the message supplied by the matcher should give the actual reason that the test failed. Combining Matchers into a single assertThat() call removes the duplication, but retains the failure reason information by utilising the SelfDescribing feature of Hamcrest. The name of the condition (i.e. the name of the annotated Factory method) is used instead. So, if we change the test to deliberately fail:</p>
 
-<div class="highlight"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">;</span>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">package</span> <span class="pl-smi">org.hamsandwich.example.wiki</span>;
 
-<span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
+<span class="pl-k">import</span> <span class="pl-smi">org.junit.Ignore</span>;
+<span class="pl-k">import</span> <span class="pl-smi">org.junit.Test</span>;
 
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">MatcherAssert</span><span class="o">.</span><span class="na">assertThat</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamcrest</span><span class="o">.</span><span class="na">Matchers</span><span class="o">.*;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">.</span><span class="na">PersonMatchers</span><span class="o">.</span><span class="na">ageInADecade</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">hamsandwich</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">wiki</span><span class="o">.</span><span class="na">PersonMatchers</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.MatcherAssert.assertThat</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamcrest.Matchers.*</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamsandwich.example.wiki.PersonMatchers.ageInADecade</span>;
+<span class="pl-k">import static</span> <span class="pl-smi">org.hamsandwich.example.wiki.PersonMatchers.name</span>;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PersonTest</span> <span class="o">{</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">PersonTest</span> {
 
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">detailsStoredProperly</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">Person</span> <span class="n">dave</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Dave"</span><span class="o">,</span> <span class="mi">33</span><span class="o">);</span>
-        <span class="n">Person</span> <span class="n">alan</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">"Alan"</span><span class="o">,</span> <span class="mi">65</span><span class="o">);</span>
+    <span class="pl-k">@Test</span>
+    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">detailsStoredProperly</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {
+        <span class="pl-smi">Person</span> dave <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>, <span class="pl-c1">33</span>);
+        <span class="pl-smi">Person</span> alan <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Alan<span class="pl-pds">"</span></span>, <span class="pl-c1">65</span>);
 
-        <span class="n">assertThat</span><span class="o">(</span><span class="n">dave</span><span class="o">,</span>
-                <span class="n">allOf</span><span class="o">(</span>
-                        <span class="n">name</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="s">"Mark"</span><span class="o">))),</span>
-                        <span class="n">ageInADecade</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="n">equalTo</span><span class="o">(</span><span class="mi">53</span><span class="o">)),</span> <span class="n">is</span><span class="o">(</span><span class="n">lessThan</span><span class="o">(</span><span class="n">alan</span><span class="o">.</span><span class="na">age</span><span class="o">)))</span>
-                <span class="o">)</span>
-        <span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
+        assertThat(dave,
+                allOf(
+                        name(is(equalTo(<span class="pl-s"><span class="pl-pds">"</span>Mark<span class="pl-pds">"</span></span>))),
+                        ageInADecade(is(equalTo(<span class="pl-c1">53</span>)), is(lessThan(alan<span class="pl-k">.</span>age)))
+                )
+        );
+    }
+}</pre></div>
 
 <p>... it now fails with the error message:</p>
 
-<div class="highlight"><pre><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">AssertionError</span><span class="o">:</span> 
-<span class="nl">Expected:</span> <span class="o">([</span><span class="n">Person</span> <span class="n">where</span> <span class="n">name</span> <span class="o">(</span><span class="n">is</span> <span class="s">"Mark"</span><span class="o">)]</span> <span class="n">and</span> <span class="o">[</span><span class="n">a</span> <span class="n">Person</span> <span class="n">where</span> <span class="n">ageInADecade</span> <span class="o">(</span><span class="n">is</span> <span class="o">&lt;</span><span class="mi">53</span><span class="o">&gt;</span> <span class="n">and</span> <span class="n">is</span> <span class="n">a</span> <span class="n">value</span> <span class="n">less</span> <span class="n">than</span> <span class="o">&lt;</span><span class="mi">65</span><span class="o">&gt;)])</span>
-     <span class="nl">but:</span> <span class="o">[</span><span class="n">Person</span> <span class="n">where</span> <span class="n">name</span> <span class="o">(</span><span class="n">is</span> <span class="s">"Mark"</span><span class="o">)]</span> <span class="n">is</span> <span class="s">"Mark"</span> <span class="n">was</span> <span class="s">"Dave"</span>
-<span class="o">...</span>
-</pre></div>
+<div class="highlight highlight-source-java"><pre><span class="pl-smi">java.lang<span class="pl-k">.</span>AssertionError</span><span class="pl-k">:</span> 
+<span class="pl-smi">Expected</span><span class="pl-k">:</span> ([<span class="pl-smi">Person</span> where name (is <span class="pl-s"><span class="pl-pds">"</span>Mark<span class="pl-pds">"</span></span>)] and [a <span class="pl-smi">Person</span> where ageInADecade (is <span class="pl-k">&lt;</span><span class="pl-c1">53</span><span class="pl-k">&gt;</span> and is a value less than <span class="pl-k">&lt;</span><span class="pl-c1">65</span><span class="pl-k">&gt;</span>)])
+     but<span class="pl-k">:</span> [<span class="pl-smi">Person</span> where name (is <span class="pl-s"><span class="pl-pds">"</span>Mark<span class="pl-pds">"</span></span>)] is <span class="pl-s"><span class="pl-pds">"</span>Mark<span class="pl-pds">"</span></span> was <span class="pl-s"><span class="pl-pds">"</span>Dave<span class="pl-pds">"</span></span>
+<span class="pl-c1">...</span></pre></div>
 
-<h3>And Finally...</h3>
+<h3>
+<a id="and-finally" class="anchor" href="#and-finally" aria-hidden="true"><span class="octicon octicon-link"></span></a>And Finally...</h3>
 
 <p>It is also possible (nay, desirable!) to use these Matchers in production code as a filtering mechanic and there is an example of this usage included in the Zip distribution. An interesting benefit of the Hamcrest SelfDescribing functionality is that these Matchers generate human-readable descriptions from the describeTo() and toString() methods.</p>
 
@@ -242,18 +239,25 @@ Simply type ant or ant build at the command line.in the "core" folder</li>
 <p>Have a play. Let us know what you think.</p>
 
 <p>:)</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Hamsandwich maintained by <a href="https://github.com/daviddenton">daviddenton</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/daviddenton/hamsandwich">Hamsandwich</a> is maintained by <a href="https://github.com/daviddenton">daviddenton</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-69281315-9");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
   </body>
 </html>
